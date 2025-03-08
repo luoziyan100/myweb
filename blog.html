@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客 - AIyan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* 博客页面特有样式 */
+        .blog-header {
+            background: linear-gradient(135deg, #0c1445 0%, #1e2c91 100%);
+            padding: 100px 0 60px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .blog-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .blog-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .blog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        
+        .blog-post {
+            background: rgba(30, 30, 50, 0.7);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .blog-post-header {
+            background: linear-gradient(135deg, #2a2a4a 0%, #3a3a6a 100%);
+            padding: 30px;
+            position: relative;
+        }
+        
+        .blog-post-title {
+            font-size: 1.8rem;
+            margin: 0 0 10px;
+            color: #fff;
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .blog-post-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .blog-post-content {
+            padding: 30px;
+        }
+        
+        .blog-post-excerpt {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .blog-post-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: #4ca9ff;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .blog-post-link:hover {
+            color: #7abeff;
+        }
+        
+        .blog-post-tags {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .blog-post-tag {
+            background: rgba(76, 169, 255, 0.2);
+            color: #4ca9ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">AI<span>yan</span></a>
+            </div>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="blog.html" class="active">博客</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="xiaohongshu.html">小红书</a></li>
+                <li><a href="https://sspai.com/u/deeplearning" target="_blank">少数派</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 博客头部 -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>AI研究与思考</h1>
+            <p>分享我在人工智能、神经网络和大型语言模型方面的研究、见解和最新发现</p>
+        </div>
+    </section>
+
+    <!-- 博客内容 -->
+    <section class="blog-container">
+        <div class="blog-posts">
+            <!-- 新博客文章 - 解构Transformer -->
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h2 class="blog-post-title">解构Transformer：注意力机制的深度解析</h2>
+                    <div class="blog-post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025年3月8日</span>
+                        <span><i class="far fa-clock"></i> 15分钟阅读</span>
+                    </div>
+                </div>
+                <div class="blog-post-content">
+                    <p class="blog-post-excerpt">Transformer架构自2017年问世以来彻底改变了自然语言处理领域。本文深入探讨注意力机制的数学原理、计算过程和最新优化方法，帮助你理解这一强大架构的核心组件。</p>
+                    <a href="blog-post1.html" class="blog-post-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">Transformer</span>
+                        <span class="blog-post-tag">注意力机制</span>
+                        <span class="blog-post-tag">NLP</span>
+                        <span class="blog-post-tag">深度学习</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 原有的博客文章1 (现在变成第二篇) -->
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h2 class="blog-post-title">大型语言模型训练：从理论到实践</h2>
+                    <div class="blog-post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025年2月15日</span>
+                        <span><i class="far fa-clock"></i> 20分钟阅读</span>
+                    </div>
+                </div>
+                <div class="blog-post-content">
+                    <p class="blog-post-excerpt">训练大型语言模型涉及众多技术挑战和优化策略。本文分享我在训练过程中积累的经验，包括分布式训练技术、混合精度、梯度累积等关键策略，以及如何有效管理计算资源...</p>
+                    <a href="blog-post2.html" class="blog-post-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">LLM</span>
+                        <span class="blog-post-tag">分布式训练</span>
+                        <span class="blog-post-tag">模型优化</span>
+                        <span class="blog-post-tag">GPU加速</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 博客文章3 -->
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h2 class="blog-post-title">参数高效微调：让大模型适应特定任务的艺术</h2>
+                    <div class="blog-post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025年2月3日</span>
+                        <span><i class="far fa-clock"></i> 12分钟阅读</span>
+                    </div>
+                </div>
+                <div class="blog-post-content">
+                    <p class="blog-post-excerpt">微调大型预训练模型已成为现代AI应用的核心工作流程。本文介绍LoRA、Prefix Tuning、P-Tuning等参数高效微调方法的原理和实践经验，对比各种方法的优缺点和适用场景...</p>
+                    <a href="blog-post3.html" class="blog-post-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">PEFT</span>
+                        <span class="blog-post-tag">LoRA</span>
+                        <span class="blog-post-tag">微调</span>
+                        <span class="blog-post-tag">迁移学习</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 博客文章4 -->
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h2 class="blog-post-title">神经架构搜索：自动化AI模型设计的前沿</h2>
+                    <div class="blog-post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025年1月17日</span>
+                        <span><i class="far fa-clock"></i> 18分钟阅读</span>
+                    </div>
+                </div>
+                <div class="blog-post-content">
+                    <p class="blog-post-excerpt">神经架构搜索(NAS)通过算法自动发现最优神经网络结构，减少人工试错成本。本文介绍NAS的主要方法、评估策略和最新研究进展，探讨如何将NAS应用于实际项目中...</p>
+                    <a href="blog-post4.html" class="blog-post-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">NAS</span>
+                        <span class="blog-post-tag">AutoML</span>
+                        <span class="blog-post-tag">模型设计</span>
+                        <span class="blog-post-tag">效率优化</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 博客文章5 -->
+            <article class="blog-post">
+                <div class="blog-post-header">
+                    <h2 class="blog-post-title">AI研究环境搭建：我的工作流程与工具集</h2>
+                    <div class="blog-post-meta">
+                        <span><i class="far fa-calendar-alt"></i> 2025年1月5日</span>
+                        <span><i class="far fa-clock"></i> 10分钟阅读</span>
+                    </div>
+                </div>
+                <div class="blog-post-content">
+                    <p class="blog-post-excerpt">高效的研究环境对AI开发至关重要。本文分享我构建和使用的开发环境，包括硬件配置、软件工具链、云服务选择以及数据管理和实验追踪方法，帮助你打造适合自己的AI研究工作流...</p>
+                    <a href="blog-post5.html" class="blog-post-link">阅读全文 <i class="fas fa-arrow-right"></i></a>
+                    <div class="blog-post-tags">
+                        <span class="blog-post-tag">开发环境</span>
+                        <span class="blog-post-tag">工具链</span>
+                        <span class="blog-post-tag">工作流程</span>
+                        <span class="blog-post-tag">研究方法</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2025 yanziluo. </p>
+                </div>
+                <div class="contact-info">
+                    <p>邮箱: 1017075076@qq.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/luoziyan100" target="_blank" aria-label="GitHub 资料"><i class="fab fa-github"></i></a>
+                    <a href="https://www.xiaohongshu.com/user/profile/66ab7e91000000001d0221ce" target="_blank" aria-label="小红书资料"><i class="fas fa-book-open"></i></a>
+                    <a href="https://sspai.com/u/deeplearning" target="_blank" aria-label="少数派资料"><i class="fas fa-pen-nib"></i></a>
+                </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#" id="back-to-top-btn" aria-label="回到顶部"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

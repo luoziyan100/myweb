@@ -1252,4 +1252,68 @@ footer {
     .expertise-grid, .projects-grid, .repos-grid, .posts-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* 小红书主页跳转样式 */
+.xiaohongshu-redirect {
+    padding: 100px 0;
+    background-color: var(--bg-secondary);
+    text-align: center;
+}
+
+.redirect-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background: rgba(255, 36, 66, 0.1);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.redirect-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.redirect-icon {
+    font-size: 3rem;
+    color: var(--xiaohongshu-color);
+    margin-bottom: 20px;
+}
+
+.redirect-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+}
+
+.redirect-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+}
+
+.btn-large {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+.btn-xiaohongshu {
+    background-color: var(--xiaohongshu-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    padding: 10px 20px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+}
+
+.btn-xiaohongshu:hover {
+    background-color: #e6213d;
+    color: white;
+    transform: translateY(-2px);
 } 

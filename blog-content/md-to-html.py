@@ -82,7 +82,7 @@ def convert_markdown_to_html(markdown_file, output_html=None):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} - AIyan</title>
+    <title>{title} - Hello, 我是yan</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -245,7 +245,7 @@ def convert_markdown_to_html(markdown_file, output_html=None):
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="index.html">AI<span>yan</span></a>
+                <a href="index.html">Hello,我是<span>yan</span></a>
             </div>
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
@@ -285,7 +285,7 @@ def convert_markdown_to_html(markdown_file, output_html=None):
         <div class="container">
             <div class="footer-content">
                 <div class="copyright">
-                    <p>&copy; 2025 AI训练师. 保留所有权利。</p>
+                    <p>&copy; 2025 Hello, 我是yan. 保留所有权利。</p>
                 </div>
                 <div class="contact-info">
                     <p>邮箱: 1017075076@qq.com</p>

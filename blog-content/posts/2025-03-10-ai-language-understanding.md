@@ -1,6 +1,6 @@
 ---
 title: "探秘AI：AI是如何理解一句话的"
-date: 2025-03-10
+date: 2025-03-8
 author: "yan"
 tags: ["人工智能", "自然语言处理", "深度学习", "语言理解"]
 image: "../images/ai-language-understanding.jpg"

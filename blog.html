@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* 博客页面特有样式 */
+        /* 博客园博客页面特有样式 */
         .blog-header {
-            background: linear-gradient(135deg, #0c1445 0%, #1e2c91 100%);
+            background: linear-gradient(135deg, #3498db 0%, #6c5ce7 100%);
             padding: 100px 0 60px;
             color: #fff;
             text-align: center;
@@ -31,94 +31,78 @@
         }
         
         .blog-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 60px 20px;
         }
         
-        .blog-posts {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
+        .blog-iframe {
+            width: 100%;
+            height: 1000px;
+            border: none;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
         }
         
-        .blog-post {
-            background: rgba(30, 30, 50, 0.7);
+        .blog-section {
+            background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .blog-section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .blog-section p {
+            color: #546a7b;
+            margin-bottom: 20px;
+        }
+        
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .category-tag {
+            background: rgba(52, 152, 219, 0.1);
+            color: #3498db;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
             transition: all 0.3s ease;
         }
         
-        .blog-post:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        .category-tag:hover {
+            background: rgba(52, 152, 219, 0.2);
+            transform: translateY(-2px);
         }
         
-        .blog-post-header {
-            background: linear-gradient(135deg, #2a2a4a 0%, #3a3a6a 100%);
-            padding: 30px;
-            position: relative;
-        }
-        
-        .blog-post-title {
-            font-size: 1.8rem;
-            margin: 0 0 10px;
+        .cnblogs-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #3498db 0%, #6c5ce7 100%);
             color: #fff;
-        }
-        
-        .blog-post-meta {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-        }
-        
-        .blog-post-meta span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .blog-post-content {
-            padding: 30px;
-        }
-        
-        .blog-post-excerpt {
-            margin-bottom: 20px;
-            line-height: 1.6;
-            color: rgba(255, 255, 255, 0.9);
-        }
-        
-        .blog-post-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            color: #4ca9ff;
-            font-weight: 500;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
             text-decoration: none;
-            transition: all 0.2s ease;
-        }
-        
-        .blog-post-link:hover {
-            color: #7abeff;
-        }
-        
-        .blog-post-tags {
             margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
         }
         
-        .blog-post-tag {
-            background: rgba(76, 169, 255, 0.2);
-            color: #4ca9ff;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
+        .cnblogs-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
         }
     </style>
 </head>
@@ -134,7 +118,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="https://home.cnblogs.com/u/yanziluo" target="_blank">博客园</a></li>
+                <li><a href="hhttps://www.cnblogs.com/yanziluo" target="_blank">博客园</a></li>
                 <li><a href="github.html">GitHub</a></li>
                 <li><a href="xiaohongshu.html">小红书</a></li>
                 <li><a href="https://www.woshipm.com/u/1615096" target="_blank">人人都是产品经理</a></li>

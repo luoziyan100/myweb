@@ -1,0 +1,128 @@
+baseURL = 'https://luoziyan100.github.io/myweb'
+languageCode = 'zh-cn'
+title = 'yan的AI时代之旅'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# 分页设置
+[pagination]
+pagerSize = 5
+
+[minify]
+disableXML = false
+minifyOutput = true
+
+[params]
+env = "development"
+title = "Hello, 我是yan"
+description = "专注于AI研究与开发，分享从Zero to Hero的AI学习路径和技术见解"
+keywords = ["AI", "机器学习", "深度学习", "Transformer", "技术博客"]
+author = "yan"
+DateFormat = "2006年1月2日"
+defaultTheme = "light" # dark, light
+disableThemeToggle = false
+
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
+disableSpecial1stPost = true
+ShowPostsOnHomePage = false
+profileMode.enabled = false
+
+# 搜索功能
+ShowSearchPage = true
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+
+# 主题外观定制
+assets.disableHLJS = true
+assets.disableFingerprinting = false
+cover.hiddenInList = false
+cover.hiddenInSingle = false
+
+# 明亮主题增强
+ShowFullTextinRSS = true
+
+# 首页信息
+[params.homeInfoParams]
+Title = "👋 Hello, 我是yan"
+Content = """
+欢迎来到我的AI时代之旅！
+在这里会记录我在已经到来，但尚未全面到来的AI时代的点滴。
+
+**关注领域**: 大语言模型、vibe coding、社会发展    
+**学习方向**: 如何与AI相处     
+**身份**: AI的朋友    
+"""
+
+# 社交媒体链接
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/luoziyan100"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:zluo5820@gmail.com"
+
+[[params.socialIcons]]
+name = "x"
+url = "https://x.com/Ziyan00001"
+
+[[params.socialIcons]]
+name = "xiaohongshu"
+url = "https://www.xiaohongshu.com/user/profile/66ab7e91000000001d0221ce"
+
+# 导航菜单
+[menu]
+[[menu.main]]
+identifier = "archives"
+name = "归档"
+url = "/archives/"
+weight = 10
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 20
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 30
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 40
+
+# 搜索功能
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+# 数学公式支持
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true

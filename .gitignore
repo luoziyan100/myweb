@@ -1,0 +1,24 @@
+# Hugo
+public/
+.hugo_build.lock
+
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Old blog content (keep as backup)
+blog-content/
+
+# System files
+.DS_Store
+.vscode/
+
+# Local development
+*.log

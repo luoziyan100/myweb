@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://luoziyan100.github.io/myweb/sitemap.xml

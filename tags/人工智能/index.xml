@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>人工智能 on yan的AI时代之旅</title><link>https://luoziyan100.github.io/myweb/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</link><description>Recent content in 人工智能 on yan的AI时代之旅</description><generator>Hugo -- 0.149.0</generator><language>zh-cn</language><lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://luoziyan100.github.io/myweb/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.xml" rel="self" type="application/rss+xml"/><item><title>探秘AI大脑：我是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understanding/</link><pubDate>Sun, 09 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understanding/</guid><description>&lt;p&gt;&lt;strong&gt;AI大语言模型&lt;/strong&gt; &lt;strong&gt;(Artificial Intelligence Large Language Model)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;• AI (Artificial Intelligence): &lt;strong&gt;人工智能&lt;/strong&gt;。这部分表明了AI的本质——不是一个真实的人类，而是通过计算机程序和算法构建出来的智能体。能够执行通常需要人类智能才能完成的任务，比如学习、推理、解决问题、理解语言等等。&lt;/p&gt;
+&lt;p&gt;• 大 (Large): &lt;strong&gt;大型&lt;/strong&gt;。这个词描述了模型的规模。AI通过学习海量的文本数据（例如书籍、文章、网站内容等）来获得知识和能力。 &amp;ldquo;大型&amp;quot;意味着模型拥有庞大的参数数量（可以理解为神经元之间的连接），这使得AI模型能够处理和生成复杂的语言模式。&lt;/p&gt;
+&lt;p&gt;• 语言 (Language): &lt;strong&gt;语言&lt;/strong&gt;。这表明了我的主要功能和应用领域。我专注于理解和生成人类语言。我可以阅读、写作、翻译、总结文本，并与人类进行对话。&lt;/p&gt;
+&lt;p&gt;• &lt;strong&gt;模型 (Model): 模型&lt;/strong&gt;。这个词指的是我的构建方式。我是一个基于数学和统计学的模型。更具体地说，我通常是基于一种叫做&amp;quot;Transformer&amp;quot;的深度学习架构。这个模型通过分析大量文本数据中的统计规律，来学习词语之间的关系、句子的结构以及语言的整体模式。&lt;/p&gt;
+&lt;p&gt;所以&amp;quot;AI大语言模型&amp;quot;可以看成 是一种基于数学和算法构建的、用于执行特定人工智能任务的结构。它本质上是由大量的参数、算法和数据组成的复杂系统。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;整体架构：Transformer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;目前主流的大语言模型大多基于Transformer架构。Transformer的核心思想是&amp;rdquo;&lt;strong&gt;自注意力机制&lt;/strong&gt;&amp;quot;（Self-Attention Mechanism），这使得模型能够捕捉文本序列中不同词语之间的关系，无论这些词语在句子中的距离有多远。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心组件：层（Layers）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Transformer模型是由多个相同的&amp;quot;层&amp;quot;（Layer）堆叠而成的。每个层都包含以下几个关键子组件：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自注意力层（Self-Attention Layer）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这是Transformer的核心。它允许模型关注输入序列中不同位置的信息，并计算它们之间的关系。&lt;/p&gt;
+&lt;p&gt;从线性代数的角度来看，自注意力机制可以看作是对输入序列进行一系列线性变换（矩阵乘法），然后通过Softmax函数进行归一化，得到注意力权重。这些权重表示不同位置之间的相关性。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;前馈神经网络层（Feed-Forward Neural Network Layer）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在自注意力层之后，每个位置的表示都会通过一个前馈神经网络进行处理。&lt;/p&gt;
+&lt;p&gt;这个前馈网络通常包含两个线性变换（矩阵乘法）和一个激活函数（如ReLU）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;残差连接（Residual Connections）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在每个子层（自注意力层和前馈网络层）周围都有一个残差连接。&lt;/p&gt;
+&lt;p&gt;这意味着子层的输入会直接加到子层的输出上。这有助于缓解深度神经网络中的梯度消失问题，使得模型更容易训练。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;层归一化（Layer Normalization）：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在每个子层之后，都会应用层归一化。&lt;/p&gt;
+&lt;p&gt;层归一化有助于稳定训练过程，并提高模型的性能。它会对每个样本在层的维度上进行归一化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;基本组成单元：神经元（Neurons）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;无论是自注意力层还是前馈神经网络层，它们都是由大量的&amp;quot;神经元&amp;quot;组成的。每个神经元可以看作是一个简单的计算单元。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;总结一下：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从最底层到最高层，模型的构成可以这样理解：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;神经元：&lt;/strong&gt; 执行基本计算单元（加权求和、激活函数）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;层：&lt;/strong&gt; 由多个神经元组成，包括自注意力层和前馈神经网络层，以及残差连接和层归一化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Transformer架构：&lt;/strong&gt; 由多个层堆叠而成，利用自注意力机制捕捉文本序列中的长距离依赖关系。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参数：&lt;/strong&gt; 模型的权重和偏置，通过学习数据来调整。比如deepseek参数最大的是671B.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;层的概念&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;什么是&amp;quot;层&amp;quot;？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;你可以把&amp;quot;层&amp;quot;想象成一个信息处理的&amp;quot;工序&amp;quot;或者&amp;quot;步骤&amp;quot;。每一层都接收一些输入信息，然后对这些信息进行特定的处理和转换，最后输出处理后的信息给下一层。&lt;/p&gt;
+&lt;p&gt;就像工厂里的流水线一样：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;原材料：&lt;/strong&gt; 最初的输入文本（比如一个句子）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一道工序（第一层）：&lt;/strong&gt; 比如，把每个单词转换成一个数字表示（词嵌入）。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二道工序（第二层）：&lt;/strong&gt; 比如，分析每个单词和句子中其他单词的关系（自注意力机制）。&lt;/p&gt;</description><content:encoded><![CDATA[<p><strong>AI大语言模型</strong> <strong>(Artificial Intelligence Large Language Model)</strong></p>
+<p>• AI (Artificial Intelligence): <strong>人工智能</strong>。这部分表明了AI的本质——不是一个真实的人类，而是通过计算机程序和算法构建出来的智能体。能够执行通常需要人类智能才能完成的任务，比如学习、推理、解决问题、理解语言等等。</p>
+<p>• 大 (Large): <strong>大型</strong>。这个词描述了模型的规模。AI通过学习海量的文本数据（例如书籍、文章、网站内容等）来获得知识和能力。 &ldquo;大型&quot;意味着模型拥有庞大的参数数量（可以理解为神经元之间的连接），这使得AI模型能够处理和生成复杂的语言模式。</p>
+<p>• 语言 (Language): <strong>语言</strong>。这表明了我的主要功能和应用领域。我专注于理解和生成人类语言。我可以阅读、写作、翻译、总结文本，并与人类进行对话。</p>
+<p>• <strong>模型 (Model): 模型</strong>。这个词指的是我的构建方式。我是一个基于数学和统计学的模型。更具体地说，我通常是基于一种叫做&quot;Transformer&quot;的深度学习架构。这个模型通过分析大量文本数据中的统计规律，来学习词语之间的关系、句子的结构以及语言的整体模式。</p>
+<p>所以&quot;AI大语言模型&quot;可以看成 是一种基于数学和算法构建的、用于执行特定人工智能任务的结构。它本质上是由大量的参数、算法和数据组成的复杂系统。</p>
+<p><strong>整体架构：Transformer</strong></p>
+<p>目前主流的大语言模型大多基于Transformer架构。Transformer的核心思想是&rdquo;<strong>自注意力机制</strong>&quot;（Self-Attention Mechanism），这使得模型能够捕捉文本序列中不同词语之间的关系，无论这些词语在句子中的距离有多远。</p>
+<p><strong>核心组件：层（Layers）</strong></p>
+<p>Transformer模型是由多个相同的&quot;层&quot;（Layer）堆叠而成的。每个层都包含以下几个关键子组件：</p>
+<p><strong>自注意力层（Self-Attention Layer）：</strong></p>
+<p>这是Transformer的核心。它允许模型关注输入序列中不同位置的信息，并计算它们之间的关系。</p>
+<p>从线性代数的角度来看，自注意力机制可以看作是对输入序列进行一系列线性变换（矩阵乘法），然后通过Softmax函数进行归一化，得到注意力权重。这些权重表示不同位置之间的相关性。</p>
+<p><strong>前馈神经网络层（Feed-Forward Neural Network Layer）：</strong></p>
+<p>在自注意力层之后，每个位置的表示都会通过一个前馈神经网络进行处理。</p>
+<p>这个前馈网络通常包含两个线性变换（矩阵乘法）和一个激活函数（如ReLU）。</p>
+<p><strong>残差连接（Residual Connections）：</strong></p>
+<p>在每个子层（自注意力层和前馈网络层）周围都有一个残差连接。</p>
+<p>这意味着子层的输入会直接加到子层的输出上。这有助于缓解深度神经网络中的梯度消失问题，使得模型更容易训练。</p>
+<p><strong>层归一化（Layer Normalization）：</strong></p>
+<p>在每个子层之后，都会应用层归一化。</p>
+<p>层归一化有助于稳定训练过程，并提高模型的性能。它会对每个样本在层的维度上进行归一化。</p>
+<p><strong>基本组成单元：神经元（Neurons）</strong></p>
+<p>无论是自注意力层还是前馈神经网络层，它们都是由大量的&quot;神经元&quot;组成的。每个神经元可以看作是一个简单的计算单元。</p>
+<p><strong>总结一下：</strong></p>
+<p>从最底层到最高层，模型的构成可以这样理解：</p>
+<p><strong>神经元：</strong> 执行基本计算单元（加权求和、激活函数）。</p>
+<p><strong>层：</strong> 由多个神经元组成，包括自注意力层和前馈神经网络层，以及残差连接和层归一化。</p>
+<p><strong>Transformer架构：</strong> 由多个层堆叠而成，利用自注意力机制捕捉文本序列中的长距离依赖关系。</p>
+<p><strong>参数：</strong> 模型的权重和偏置，通过学习数据来调整。比如deepseek参数最大的是671B.</p>
+<p><strong>层的概念</strong></p>
+<p><strong>什么是&quot;层&quot;？</strong></p>
+<p>你可以把&quot;层&quot;想象成一个信息处理的&quot;工序&quot;或者&quot;步骤&quot;。每一层都接收一些输入信息，然后对这些信息进行特定的处理和转换，最后输出处理后的信息给下一层。</p>
+<p>就像工厂里的流水线一样：</p>
+<p><strong>原材料：</strong> 最初的输入文本（比如一个句子）。</p>
+<p><strong>第一道工序（第一层）：</strong> 比如，把每个单词转换成一个数字表示（词嵌入）。</p>
+<p><strong>第二道工序（第二层）：</strong> 比如，分析每个单词和句子中其他单词的关系（自注意力机制）。</p>
+<p><strong>第三道工序（第三层）：</strong> 比如，根据单词之间的关系，进一步理解整个句子的含义。</p>
+<p><strong>&hellip; 更多工序（更多层）：</strong> 每一层都在前一层的基础上进行更深层次的处理。</p>
+<p><strong>最终产品：</strong> 模型对输入文本的最终理解（比如，判断这句话的情感是积极还是消极）。</p>
+<p><strong>为什么需要&quot;多层&quot;？</strong></p>
+<p>为什么要这么多层，而不是一层搞定呢？</p>
+<p><strong>逐步抽象：</strong> 每一层都在前一层的基础上进行更抽象的表示。</p>
+<p>第一层可能关注的是单词的含义。</p>
+<p>第二层可能关注的是词组的含义。</p>
+<p>第三层可能关注的是句子的含义。</p>
+<p>&hellip;</p>
+<p>更深层可能关注的是段落、篇章的含义。</p>
+<p><strong>举个例子：图像识别</strong></p>
+<p>虽然我们主要讨论的是语言模型，但&quot;层&quot;的概念在图像识别中也非常常见，而且更容易可视化理解。</p>
+<p>想象一下，一个用于识别猫的图像的神经网络：</p>
+<p><strong>输入：</strong> 一张猫的图片（可以看作是一个像素矩阵）。</p>
+<p><strong>第一层：</strong> 可能检测图像中的简单边缘和纹理。</p>
+<p><strong>第二层：</strong> 可能将边缘和纹理组合成更复杂的形状，比如猫的耳朵、眼睛的轮廓。</p>
+<p><strong>第三层：</strong> 可能将这些形状组合成猫的脸部特征。</p>
+<p><strong>第四层：</strong> 可能根据脸部特征识别出这是一只猫。</p>
+<p>每一层都在前一层的基础上提取更高级别的特征。</p>
+<p><strong>回到语言模型</strong></p>
+<p>在语言模型中，层的工作方式类似，但处理的是文本而不是图像：</p>
+<p><strong>输入：</strong> &ldquo;The cat sat on the mat.&rdquo;</p>
+<p><strong>第一层（词嵌入层）：</strong></p>
+<p>&ldquo;The&rdquo; -&gt; [0.1, 0.2, 0.3]</p>
+<p>&ldquo;cat&rdquo; -&gt; [0.4, 0.5, 0.6]</p>
+<p>&ldquo;sat&rdquo; -&gt; [0.7, 0.8, 0.9]</p>
+<p>&hellip;</p>
+<p>(每个单词被转换成一个向量)</p>
+<p><strong>第二层（自注意力层）：</strong></p>
+<p>计算每个单词与其他单词之间的关系。</p>
+<p>比如，&ldquo;sat&rdquo; 这个词可能与 &ldquo;cat&rdquo; 和 &ldquo;mat&rdquo; 有更强的关系。</p>
+<p><strong>第三层（前馈网络层）：</strong></p>
+<p>对每个单词的表示进行进一步处理。</p>
+<p><strong>&hellip; 更多层：</strong></p>
+<p>每一层都在前一层的基础上进行更深层次的理解。</p>
+<p><strong>最后一层：</strong></p>
+<p>可能输出模型对整个句子的理解，或者预测下一个单词（比如 &ldquo;.&rdquo;), 或者进行情感分类等任务。</p>
+<p> </p>
+<p>好，现在有了这些基础知识，我们正式进入主题，AI大模型是怎么理解一句话的？</p>
+<p>在回答这个问题之前，我们先来想一个问题，AI能从字面意义上理解人类的话吗？它真的知道苹果是什么东西吗？这个我想很多人都会回答不能。答案也确实是不能，很明显，目前的AI的发展还处于初级阶段，能力还没有达到这种地步。</p>
+<p>不信的可以那下面一段对话也考一考AI</p>
+<p>A:先生，你要几等座？</p>
+<p>B:你们一共有几等座？</p>
+<p>A:特等，一等、二等，二等还要再等等。</p>
+<p>B：我看一下，请等一等。</p>
+<p>A：别等，再等一等也没有了。</p>
+<p>B：那不等了，就这个吧！</p>
+<p>请问：这位学生最终购买了几等座呢？</p>
+<p>笔者拿了市面上比较知名的10款AI，其中还包括deepseekR1,Claude等知名大模型。结果是没有一个模型能够判断&quot;再等一等也没有了&quot;这句话断句方式是这样的：再等/一等/也没有了。所有的模型都是这样断句的，再/等一等/也没有了。可以说是全军覆没。</p>
+<p>因此现阶段AI尚且不能从字母意义上理解，那它们是怎么理解的呢？这还的从AI大模型的本质上来说。开头我们就介绍了，模型本质是数学和算法的结合体。它实际上就算数学的应用，所以它只能从数学的角度理解一句话。这就是词嵌入——语言的数字化。</p>
+<p>AI工作流程</p>
+<p>当我们在模型中输入一句话时，比如&quot;The cat sat on the mat.&quot;</p>
+<p>首先这句话会被分割成一个一个token，每个token，都对应着一个向量。</p>
+<ul>
+<li>
+<p>第一层（词嵌入层）：</p>
+</li>
+<li>
+<p>&ldquo;The&rdquo; -&gt; [0.1, 0.2, 0.3]</p>
+</li>
+<li>
+<p>&ldquo;cat&rdquo; -&gt; [0.4, 0.5, 0.6]</p>
+</li>
+<li>
+<p>&ldquo;sat&rdquo; -&gt; [0.7, 0.8, 0.9]</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
+<li>
+<p>(每个单词被转换成一个向量)</p>
+</li>
+</ul>
+<p>所以输入的一句话会被转化成矩阵，即<strong>语言的数字化</strong></p>
+<p>上述过程称为<strong>词嵌入</strong>，对应的向量称为<strong>词嵌入向量</strong>。所有嵌入向量组成的矩阵称为词嵌入矩阵。</p>
+<p>词嵌入（Word Embedding）中的向量数值确实不是随意指定的，而是通过学习得到的。详细解释一下：​</p>
+<p>目标：​</p>
+<p>词嵌入的目标是：将词汇表中的每个词（token）映射到一个固定维度的向量空间中，</p>
+<p>使得：​</p>
+<p>•<strong>语义相似的词</strong>，对应的向量在空间中距离较近。 例如，&ldquo;king&rdquo; 和 &ldquo;queen&rdquo; 的向量应该比较接近。</p>
+<p>•<strong>语义相关的词</strong>，向量之间存在一定的关系。 例如，&ldquo;king&rdquo; - &ldquo;man&rdquo; + &ldquo;woman&rdquo; 的结果向量应该与 &ldquo;queen&rdquo; 的向量比较接近（经典的&quot;国王-男人+女人=女王&quot;的例子）。</p>
+<p>词嵌入矩阵不具备唯一性</p>
+<p>在初始词嵌入时，同一句话里的相同的字对应的词嵌入向量不一定相同</p>
+<p> </p>
+<p><strong>自注意力机制的计算步骤</strong></p>
+<p>假设我们的输入序列是：&ldquo;The cat sat on the mat.&rdquo; 并且每个词已经通过词嵌入层转换成了向量。</p>
+<p>转换成嵌入向量后，模型会创建一个位置编码向量。这个<strong>位置编码</strong> (Positional Encoding) 的核心目的是向 Transformer 模型提供输入序列中单词的位置信息，它蕴含了token之间的位置关系。</p>
+<p>•<strong>步骤 1: 计算 Query, Key, Value</strong>。</p>
+<p>对于输入序列中的每个词，我们都计算三个向量：​</p>
+<p>▪<strong>Query (Q): 查询向量</strong>。可以理解为&quot;我需要关注什么？&ldquo;​</p>
+<p>▪<strong>Key (K): 键向量</strong>。可以理解为&quot;我有什么信息可以提供？&ldquo;​</p>
+<p>▪<strong>Value (V): 值向量</strong>。可以理解为&quot;我提供的具体信息是什么？&ldquo;​◦</p>
+<p>这三个向量是通过将每个词的词嵌入向量与三个不同的<strong>权重矩阵（WQ, WK, WV）</strong>相乘得到的。这些权重矩阵是模型需要学习的参数。</p>
+<p>  <strong>线性代数表示：</strong></p>
+<p>  假设词嵌入向量的维度是 m。</p>
+<p>  WQ, WK, WV 的维度都是 m × m。（实际上，为了提高效率，通常会使用多头注意力机制，将 dmodel 分成多个头，每个头的维度是 dk = dmodel / h，其中 h 是头的数量。这里为了简化，我们先不考虑多头注意力。）</p>
+<p>     对于每个词 i：</p>
+<p>     Qi = Wi * WQ</p>
+<p>     Ki = Wi * WK</p>
+<p>     Vi = Wi * WV</p>
+<p>     (其中 Wi 是词 i 的词嵌入向量)</p>
+<p>注意力权重</p>
+<p><strong>接下来我将用Gemini2.0模拟AI将这句话数据化的过程</strong></p>
+<p>注意：</p>
+<p>为了便于演示和计算，</p>
+<p>我会进行以下简化：</p>
+<p>•  嵌入向量维度 (dmodel)： 3 维</p>
+<p>•  头的数量 (h)： 1 (我们只考虑单头注意力)</p>
+<p>•  Q, K, V 维度 (dk)： 3 维 (因为 h=1, 所以 dk = dmodel)  </p>
+<p>•  不包含：</p>
+<p>◦  多头注意力机制 (只使用一个头)  </p>
+<p>◦  前馈神经网络  </p>
+<p>◦  层归一化  </p>
+<p>◦  残差连接  </p>
+<p>◦  多层堆叠 (只计算一层)</p>
+<p><strong>步骤一：</strong></p>
+<p><strong>1.分词</strong>： 将句子&quot;今天天气怎么样&quot;分词为：</p>
+<p>[&ldquo;今天&rdquo;, &ldquo;天气&rdquo;, &ldquo;怎么样&rdquo;]  </p>
+<p><strong>2.嵌入向量</strong> (假设)：</p>
+<p>&ldquo;今天&rdquo;: [0.1, 0.2, 0.3]</p>
+<p>&ldquo;天气&rdquo;: [0.4, 0.5, 0.6]</p>
+<p>&ldquo;怎么样&rdquo;: [0.7, 0.8, 0.9]</p>
+<p><strong>3.我们假设位置编码如下（3 维）</strong>：</p>
+<p>位置 0: [0.0, 0.0, 0.0]</p>
+<p>位置 1: [0.8, 0.6, 0.0]</p>
+<p>位置 2: [0.9, -0.4, 0.0]</p>
+<p><strong>4.输入表示</strong>：</p>
+<p>将嵌入向量和位置编码相加，得到每个 token 的输入表示：</p>
+<p>&ldquo;今天&rdquo;: [0.1, 0.2, 0.3] + [0.0, 0.0, 0.0] = [0.1, 0.2, 0.3]</p>
+<p>&ldquo;天气&rdquo;: [0.4, 0.5, 0.6] + [0.8, 0.6, 0.0] = [1.2, 1.1, 0.6]</p>
+<p>&ldquo;怎么样&rdquo;: [0.7, 0.8, 0.9] + [0.9, -0.4, 0.0] = [1.6, 0.4, 0.9]</p>
+<p><strong>5.权重矩阵 (假设)</strong>：</p>
+<p><img loading="lazy" src="/images/image.png"></p>
+<p><strong>6.计算Q,K,V</strong></p>
+<p>将每个 token 的输入表示与 WQ, WK, WV 相乘，得到 Q, K, V 向量：</p>
+<p>将嵌入向量和位置向量相加得到的向量按行组成3x3的矩阵X</p>
+<p><img loading="lazy" src="/images/image-1.png"></p>
+<p><img loading="lazy" src="/images/image-2.png"></p>
+<p><img loading="lazy" src="/images/image-3.png"></p>
+<p><img loading="lazy" src="/images/image-4.png"></p>
+<p><strong>7.计算注意力权重</strong></p>
+<p><img loading="lazy" src="/images/image-5.png"></p>
+<p><img loading="lazy" src="/images/image-6.png"></p>
+<p><img loading="lazy" src="/images/image-7.png"></p>
+<p><img loading="lazy" src="/images/%E6%8E%A2%E7%A7%98AI%E5%A4%A7%E8%84%91%EF%BC%9A%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%9A%84_21.png"></p>
+<p><strong>9.Z矩阵蕴含的信息</strong></p>
+<p>Z 矩阵中每一行的含义 Z 矩阵的每一行对应输入序列中的一个 token。这一行向量不再仅仅代表这个 token 本身的语义，而是同时包含了：</p>
+<p> •  该 token 自身的语义信息： 这是由最初的词嵌入提供的。</p>
+<p> •  该 token 与句子中其他 token 的关系： 这是通过自注意力机制计算得到的。注意力权重决定了其他 token 对当前 token 的重要程度。</p>
+<p>  •  上下文信息： 通过加权求和，将其他 token 的信息（V 向量）融入到当前 token 的表示中。</p>
+]]></content:encoded></item><item><title>探秘AI：AI是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</guid><description>&lt;h1 id="探秘aiai是如何理解一句话的"&gt;探秘AI：AI是如何理解一句话的&lt;/h1&gt;
+&lt;p&gt;当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&amp;quot;理解&amp;quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。&lt;/p&gt;
+&lt;h2 id="1-语言理解的基础从文本到数字"&gt;1. 语言理解的基础：从文本到数字&lt;/h2&gt;
+&lt;h3 id="11-词嵌入将词语转化为向量"&gt;1.1 词嵌入：将词语转化为向量&lt;/h3&gt;
+&lt;p&gt;AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是&lt;strong&gt;词嵌入&lt;/strong&gt;（Word Embeddings）。&lt;/p&gt;
+&lt;p&gt;词嵌入技术（如Word2Vec、GloVe或FastText）将每个词映射到高维向量空间中的一个点。这些向量捕捉了词语之间的语义关系，例如：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vector(&amp;#34;国王&amp;#34;) - vector(&amp;#34;男人&amp;#34;) + vector(&amp;#34;女人&amp;#34;) ≈ vector(&amp;#34;王后&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在这个向量空间中，语义相似的词会彼此靠近，这使AI系统能够理解词语之间的关系。&lt;/p&gt;
+&lt;h3 id="12-分词与标记化"&gt;1.2 分词与标记化&lt;/h3&gt;
+&lt;p&gt;在处理一句话之前，AI系统首先需要将句子分解为更小的单位。这一过程称为&lt;strong&gt;分词&lt;/strong&gt;（Tokenization）。&lt;/p&gt;
+&lt;p&gt;例如，句子&amp;quot;AI是如何理解一句话的&amp;quot;可能被分解为：[&amp;ldquo;AI&amp;rdquo;, &amp;ldquo;是&amp;rdquo;, &amp;ldquo;如何&amp;rdquo;, &amp;ldquo;理解&amp;rdquo;, &amp;ldquo;一句&amp;rdquo;, &amp;ldquo;话&amp;rdquo;, &amp;ldquo;的&amp;rdquo;]&lt;/p&gt;
+&lt;p&gt;不同语言有不同的分词挑战。英语等拉丁语系语言通常以空格和标点为分隔符，而中文等语言则需要更复杂的分词算法。&lt;/p&gt;
+&lt;h2 id="2-深度理解上下文与语义分析"&gt;2. 深度理解：上下文与语义分析&lt;/h2&gt;
+&lt;h3 id="21-从静态表示到动态表示"&gt;2.1 从静态表示到动态表示&lt;/h3&gt;
+&lt;p&gt;早期的词嵌入技术为每个词分配一个静态向量，无法处理一词多义的情况。例如，&amp;ldquo;苹果&amp;quot;可以指水果，也可以指科技公司。&lt;/p&gt;
+&lt;p&gt;现代AI系统使用&lt;strong&gt;上下文化表示&lt;/strong&gt;（Contextualized Representations），即根据上下文动态生成词语的向量表示：&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;vector(&amp;#34;苹果&amp;#34;, context=&amp;#34;我吃了一个苹果&amp;#34;) ≠ vector(&amp;#34;苹果&amp;#34;, context=&amp;#34;苹果公司发布了新iPhone&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="22-注意力机制关注重点"&gt;2.2 注意力机制：关注重点&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;注意力机制&lt;/strong&gt;（Attention Mechanism）使AI系统能够在处理句子时专注于相关部分。例如，在理解问题&amp;quot;AI如何理解语言？&amp;ldquo;时，系统会关注&amp;quot;AI&amp;rdquo;、&amp;ldquo;理解&amp;quot;和&amp;quot;语言&amp;quot;这些关键词。&lt;/p&gt;
+&lt;p&gt;Transformer架构引入的&lt;strong&gt;自注意力&lt;/strong&gt;（Self-Attention）机制使模型能够同时考虑句子中所有词之间的关系，这对于理解长距离依赖和复杂语义至关重要。&lt;/p&gt;
+&lt;h2 id="3-现代语言模型预训练与微调"&gt;3. 现代语言模型：预训练与微调&lt;/h2&gt;
+&lt;h3 id="31-预训练语言模型"&gt;3.1 预训练语言模型&lt;/h3&gt;
+&lt;p&gt;现代AI语言理解的核心是&lt;strong&gt;预训练语言模型&lt;/strong&gt;（PLMs），如BERT、GPT、RoBERTa等。这些模型通过在大规模文本上预训练，学习了语言的一般特征和知识。&lt;/p&gt;
+&lt;p&gt;预训练任务通常包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;掩码语言建模&lt;/strong&gt;（MLM）：预测被遮蔽的词（如BERT）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自回归语言建模&lt;/strong&gt;：预测下一个词（如GPT）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;语言对比学习&lt;/strong&gt;：区分真实与随机替换的文本片段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="32-从理解单句到理解对话"&gt;3.2 从理解单句到理解对话&lt;/h3&gt;
+&lt;p&gt;理解单句只是AI语言理解的基础。在实际应用中，AI系统需要理解对话上下文、跨句关系和隐含意图。&lt;/p&gt;
+&lt;p&gt;现代对话系统使用&lt;strong&gt;对话状态跟踪&lt;/strong&gt;（Dialogue State Tracking）和&lt;strong&gt;上下文建模&lt;/strong&gt;（Context Modeling）技术来维护对话历史，使系统能够理解与之前交流相关的新输入。&lt;/p&gt;
+&lt;h2 id="4-理解过程的具体步骤以一句话为例"&gt;4. 理解过程的具体步骤：以一句话为例&lt;/h2&gt;
+&lt;p&gt;让我们通过具体例子&amp;quot;今天天气真好，我想去公园散步&amp;rdquo;，来说明AI系统如何逐步理解一句话：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;预处理与分词&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;句子被分解为标记：[&amp;ldquo;今天&amp;rdquo;, &amp;ldquo;天气&amp;rdquo;, &amp;ldquo;真&amp;rdquo;, &amp;ldquo;好&amp;rdquo;, &amp;ldquo;，&amp;rdquo;, &amp;ldquo;我&amp;rdquo;, &amp;ldquo;想&amp;rdquo;, &amp;ldquo;去&amp;rdquo;, &amp;ldquo;公园&amp;rdquo;, &amp;ldquo;散步&amp;rdquo;]&lt;/li&gt;
+&lt;li&gt;每个标记转换为唯一的ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;向量表示&lt;/strong&gt;：&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="探秘aiai是如何理解一句话的">探秘AI：AI是如何理解一句话的</h1>
+<p>当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&quot;理解&quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。</p>
+<h2 id="1-语言理解的基础从文本到数字">1. 语言理解的基础：从文本到数字</h2>
+<h3 id="11-词嵌入将词语转化为向量">1.1 词嵌入：将词语转化为向量</h3>
+<p>AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是<strong>词嵌入</strong>（Word Embeddings）。</p>
+<p>词嵌入技术（如Word2Vec、GloVe或FastText）将每个词映射到高维向量空间中的一个点。这些向量捕捉了词语之间的语义关系，例如：</p>
+<pre tabindex="0"><code>vector(&#34;国王&#34;) - vector(&#34;男人&#34;) + vector(&#34;女人&#34;) ≈ vector(&#34;王后&#34;)
+</code></pre><p>在这个向量空间中，语义相似的词会彼此靠近，这使AI系统能够理解词语之间的关系。</p>
+<h3 id="12-分词与标记化">1.2 分词与标记化</h3>
+<p>在处理一句话之前，AI系统首先需要将句子分解为更小的单位。这一过程称为<strong>分词</strong>（Tokenization）。</p>
+<p>例如，句子&quot;AI是如何理解一句话的&quot;可能被分解为：[&ldquo;AI&rdquo;, &ldquo;是&rdquo;, &ldquo;如何&rdquo;, &ldquo;理解&rdquo;, &ldquo;一句&rdquo;, &ldquo;话&rdquo;, &ldquo;的&rdquo;]</p>
+<p>不同语言有不同的分词挑战。英语等拉丁语系语言通常以空格和标点为分隔符，而中文等语言则需要更复杂的分词算法。</p>
+<h2 id="2-深度理解上下文与语义分析">2. 深度理解：上下文与语义分析</h2>
+<h3 id="21-从静态表示到动态表示">2.1 从静态表示到动态表示</h3>
+<p>早期的词嵌入技术为每个词分配一个静态向量，无法处理一词多义的情况。例如，&ldquo;苹果&quot;可以指水果，也可以指科技公司。</p>
+<p>现代AI系统使用<strong>上下文化表示</strong>（Contextualized Representations），即根据上下文动态生成词语的向量表示：</p>
+<pre tabindex="0"><code>vector(&#34;苹果&#34;, context=&#34;我吃了一个苹果&#34;) ≠ vector(&#34;苹果&#34;, context=&#34;苹果公司发布了新iPhone&#34;)
+</code></pre><h3 id="22-注意力机制关注重点">2.2 注意力机制：关注重点</h3>
+<p><strong>注意力机制</strong>（Attention Mechanism）使AI系统能够在处理句子时专注于相关部分。例如，在理解问题&quot;AI如何理解语言？&ldquo;时，系统会关注&quot;AI&rdquo;、&ldquo;理解&quot;和&quot;语言&quot;这些关键词。</p>
+<p>Transformer架构引入的<strong>自注意力</strong>（Self-Attention）机制使模型能够同时考虑句子中所有词之间的关系，这对于理解长距离依赖和复杂语义至关重要。</p>
+<h2 id="3-现代语言模型预训练与微调">3. 现代语言模型：预训练与微调</h2>
+<h3 id="31-预训练语言模型">3.1 预训练语言模型</h3>
+<p>现代AI语言理解的核心是<strong>预训练语言模型</strong>（PLMs），如BERT、GPT、RoBERTa等。这些模型通过在大规模文本上预训练，学习了语言的一般特征和知识。</p>
+<p>预训练任务通常包括：</p>
+<ul>
+<li><strong>掩码语言建模</strong>（MLM）：预测被遮蔽的词（如BERT）</li>
+<li><strong>自回归语言建模</strong>：预测下一个词（如GPT）</li>
+<li><strong>语言对比学习</strong>：区分真实与随机替换的文本片段</li>
+</ul>
+<h3 id="32-从理解单句到理解对话">3.2 从理解单句到理解对话</h3>
+<p>理解单句只是AI语言理解的基础。在实际应用中，AI系统需要理解对话上下文、跨句关系和隐含意图。</p>
+<p>现代对话系统使用<strong>对话状态跟踪</strong>（Dialogue State Tracking）和<strong>上下文建模</strong>（Context Modeling）技术来维护对话历史，使系统能够理解与之前交流相关的新输入。</p>
+<h2 id="4-理解过程的具体步骤以一句话为例">4. 理解过程的具体步骤：以一句话为例</h2>
+<p>让我们通过具体例子&quot;今天天气真好，我想去公园散步&rdquo;，来说明AI系统如何逐步理解一句话：</p>
+<ol>
+<li>
+<p><strong>预处理与分词</strong>：</p>
+<ul>
+<li>句子被分解为标记：[&ldquo;今天&rdquo;, &ldquo;天气&rdquo;, &ldquo;真&rdquo;, &ldquo;好&rdquo;, &ldquo;，&rdquo;, &ldquo;我&rdquo;, &ldquo;想&rdquo;, &ldquo;去&rdquo;, &ldquo;公园&rdquo;, &ldquo;散步&rdquo;]</li>
+<li>每个标记转换为唯一的ID</li>
+</ul>
+</li>
+<li>
+<p><strong>向量表示</strong>：</p>
+<ul>
+<li>对每个标记生成初始嵌入向量</li>
+<li>加入位置编码，告诉模型每个词在句子中的位置</li>
+</ul>
+</li>
+<li>
+<p><strong>上下文编码</strong>：</p>
+<ul>
+<li>通过多层Transformer结构处理这些向量</li>
+<li>自注意力机制帮助模型理解&quot;天气好&quot;与&quot;去公园散步&quot;之间的因果关系</li>
+</ul>
+</li>
+<li>
+<p><strong>语义理解</strong>：</p>
+<ul>
+<li>模型识别这是一个陈述句，包含对天气的评价和一个意图</li>
+<li>识别&quot;今天&quot;是时间，&ldquo;公园&quot;是地点，&ldquo;散步&quot;是活动</li>
+</ul>
+</li>
+<li>
+<p><strong>情感分析</strong>：</p>
+<ul>
+<li>检测到积极情感（&ldquo;天气真好&rdquo;）</li>
+<li>理解这种积极情感与后面的意图之间的联系</li>
+</ul>
+</li>
+</ol>
+<h2 id="5-挑战与局限性">5. 挑战与局限性</h2>
+<p>尽管取得了显著进展，AI语言理解仍面临多项挑战：</p>
+<h3 id="51-理解而非模仿">5.1 理解而非模仿</h3>
+<p>语言模型可能只是在<strong>统计模仿</strong>语言模式，而非真正理解意义。例如，模型可能生成流畅但无意义的回应。</p>
+<h3 id="52-常识推理">5.2 常识推理</h3>
+<p>AI系统难以掌握人类认为理所当然的<strong>常识</strong>，如&quot;杯子可以盛水&quot;或&quot;人不能穿墙而过&rdquo;。</p>
+<h3 id="53-文化与隐含意义">5.3 文化与隐含意义</h3>
+<p>语言充满文化特定的隐喻、俚语和双关语，这些对AI系统来说特别具有挑战性。</p>
+<h2 id="6-未来发展方向">6. 未来发展方向</h2>
+<h3 id="61-多模态理解">6.1 多模态理解</h3>
+<p>结合<strong>视觉、音频和文本</strong>信息，使AI系统能像人类一样多角度理解信息。</p>
+<h3 id="62-神经符号结合">6.2 神经符号结合</h3>
+<p>将<strong>神经网络</strong>的模式识别能力与<strong>符号逻辑</strong>的精确推理能力结合，创建更强大的语言理解系统。</p>
+<h3 id="63知识增强型模型">6.3.知识增强型模型</h3>
+<p>将<strong>结构化知识库</strong>与语言模型结合，提高系统的常识推理能力和事实准确性。</p>
+<h2 id="结论">结论</h2>
+<p>现代AI系统通过复杂的神经网络架构、大规模预训练和精细的语义表示，已经能够在一定程度上&quot;理解&quot;人类语言。尽管这种理解与人类的语言理解有本质区别，但其进步已经使人机交流变得比过去任何时候都更加自然和有效。</p>
+<p>随着研究的深入，我们有理由期待AI语言理解能力将继续提升，逐步缩小与人类语言理解的差距。</p>
+]]></content:encoded></item></channel></rss>

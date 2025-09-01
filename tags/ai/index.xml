@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI on yan的AI时代之旅</title><link>https://luoziyan100.github.io/myweb/tags/ai/</link><description>Recent content in AI on yan的AI时代之旅</description><generator>Hugo -- 0.149.0</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Sep 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://luoziyan100.github.io/myweb/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>上下文建模：个性化人工智能的未来</title><link>https://luoziyan100.github.io/myweb/posts/2025-09-01-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%BB%BA%E6%A8%A1/</link><pubDate>Mon, 01 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-09-01-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%BB%BA%E6%A8%A1/</guid><description>&lt;p&gt;标题：Context Modeling: The Future of Personalized AI
-来源：foundercoho.substack.com/p/context-mode&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI on yan的AI时代之旅</title><link>https://luoziyan100.github.io/myweb/tags/ai/</link><description>Recent content in AI on yan的AI时代之旅</description><generator>Hugo -- 0.149.0</generator><language>zh-cn</language><lastBuildDate>Mon, 01 Sep 2025 10:00:00 +0800</lastBuildDate><atom:link href="https://luoziyan100.github.io/myweb/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>上下文建模：个性化人工智能的未来</title><link>https://luoziyan100.github.io/myweb/posts/2025-09-01-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%BB%BA%E6%A8%A1/</link><pubDate>Mon, 01 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-09-01-%E4%B8%8A%E4%B8%8B%E6%96%87%E5%BB%BA%E6%A8%A1/</guid><description>&lt;p&gt;来源：foundercoho.substack.com/p/context-mode&lt;/p&gt;
 &lt;p&gt;本文由DeepVista.ai 首席执行官Jing Conan Wang撰写&lt;/p&gt;
 &lt;p&gt;人工智能界的杰出人物 Andrej Karpathy 最近提出了“上下文工程”这一术语。它描述了手动编写提示和数据以指导大型语言模型的复杂艺术。虽然这个概念正在引起广泛关注，但我认为它给我们指明了错误的方向。&lt;/p&gt;
 &lt;p&gt;个人人工智能的未来并不在于无休止地设计环境，而是需要彻底转变到我所说的“环境建模”。&lt;/p&gt;
@@ -43,8 +42,12 @@
 &lt;p&gt;上下文建模代表了整个 AI 行业普遍的基础设施需求。随着越来越多的组织部署 RAG 系统和 AI 代理，对复杂上下文管理的需求将持续增长。这为构建能够支持各种应用和用例的基础设施提供了机遇。&lt;/p&gt;
 &lt;p&gt;上下文建模系统的开发需要机器学习和系统设计方面的专业知识，将推荐系统的经验教训与自然语言处理和生成的独特挑战相结合。&lt;/p&gt;
 &lt;h1 id="期待"&gt;期待&lt;/h1&gt;
-&lt;p&gt;个性化人工智能的未来并非在于构建越来越庞大的语言模型，而是在于创建能够与这些强大但缺乏灵活性的模型有效协作的智能系统。上下文建模是迈向这一未来的关键一步，它能够赋能既强大又适应性强的人工智能系统。&lt;/p&gt;</description><content:encoded><![CDATA[<p>标题：Context Modeling: The Future of Personalized AI
-来源：foundercoho.substack.com/p/context-mode</p>
+&lt;p&gt;个性化人工智能的未来并非在于构建越来越庞大的语言模型，而是在于创建能够与这些强大但缺乏灵活性的模型有效协作的智能系统。上下文建模是迈向这一未来的关键一步，它能够赋能既强大又适应性强的人工智能系统。&lt;/p&gt;
+&lt;p&gt;随着我们不断进步，成功实施情境建模的组织将在创建真正理解并服务用户的 AI 系统方面拥有显著优势。从情境工程到情境建模的转变不仅仅是一场技术革新，更是对我们如何构建能够大规模适应和个性化的智能系统的根本性重塑。&lt;/p&gt;
+&lt;p&gt;问题不在于情境建模是否会成为标准方法，而在于业界能多快认识到它的潜力，并开始构建支持它的基础设施。个性化人工智能的未来取决于我们能否超越静态规则，拥抱动态、智能的情境生成。&lt;/p&gt;
+&lt;p&gt;这篇文章把上下文工程推广为上下文建模，特点是分配两个模型：
+一个高度专业化的fast模型快速处理上下文
+一个强大的核心模型，接收这种精心策划的上下文并专注于推理、综合，最终响应生成复杂任务。&lt;/p&gt;</description><content:encoded><![CDATA[<p>来源：foundercoho.substack.com/p/context-mode</p>
 <p>本文由DeepVista.ai 首席执行官Jing Conan Wang撰写</p>
 <p>人工智能界的杰出人物 Andrej Karpathy 最近提出了“上下文工程”这一术语。它描述了手动编写提示和数据以指导大型语言模型的复杂艺术。虽然这个概念正在引起广泛关注，但我认为它给我们指明了错误的方向。</p>
 <p>个人人工智能的未来并不在于无休止地设计环境，而是需要彻底转变到我所说的“环境建模”。</p>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>MIT on yan的AI时代之旅</title><link>https://luoziyan100.github.io/myweb/tags/mit/</link><description>Recent content in MIT on yan的AI时代之旅</description><generator>Hugo -- 0.149.0</generator><language>zh-cn</language><lastBuildDate>Wed, 03 Sep 2025 10:00:00 +2200</lastBuildDate><atom:link href="https://luoziyan100.github.io/myweb/tags/mit/index.xml" rel="self" type="application/rss+xml"/><item><title>麻省理工学院研究发现人工智能会重新编程大脑，导致认知能力下降</title><link>https://luoziyan100.github.io/myweb/posts/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</link><pubDate>Wed, 03 Sep 2025 10:00:00 +2200</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</guid><description>&lt;h2 id="麻省理工学院研究发现人工智能会重新编程大脑导致认知能力下降"&gt;麻省理工学院研究发现人工智能会重新编程大脑，导致认知能力下降&lt;/h2&gt;
+&lt;p&gt;作者： &lt;strong&gt;&lt;a href="https://x.com/NicHulscher"&gt;Nicolas Hulscher，公共卫生硕士&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;麻省理工学院的一项新研究题为《 &lt;strong&gt;&lt;a href="https://arxiv.org/abs/2506.08872"&gt;ChatGPT 下的大脑：使用人工智能助手进行论文写作时认知债务的积累》&lt;/a&gt; ，&lt;/strong&gt; 发现使用 ChatGPT 辅助写作会导致长期认知损害——可以通过脑电图扫描测量。反复依赖 ChatGPT 的学生表现出 &lt;strong&gt;神经连接减弱、记忆力受损以及&lt;/strong&gt; &lt;strong&gt;对自身写作的&lt;/strong&gt; 自主感减弱。虽然人工智能生成的内容通常得分很高，但其背后的大脑却在关闭。&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src="https://i0.wp.com/substackcdn.com/image/fetch/%24s_%217_Vh%21%2Cw_2400%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc0192a7-cf35-4b80-9095-8daab6f24ed9_1753x1188.png?w=1200&amp;ssl=1"&gt;&lt;/p&gt;
+&lt;p&gt;研究结果清晰可见：像 ChatGPT 和 Grok 这样的大型语言模型 (LLM) 不仅能帮助学生写作，还能训练大脑放松。以下是研究人员的发现：&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 id="人工智能的使用导致大脑连通性下降"&gt;人工智能的使用导致大脑连通性下降&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;脑电图扫描显示，随着对外部工具的依赖性增加，大脑中的神经连接系统性地缩小：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;仅有大脑的群体：&lt;/strong&gt; 最强、最广泛的连接性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;搜索引擎组：&lt;/strong&gt; 中级。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM 组：&lt;/strong&gt; alpha、beta、delta 和 theta 波段之间的连接性最弱。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LLM 的使用导致批判性注意力和视觉处理网络参与度不足，尤其是在第 4 节中，当参与者尝试在没有人工智能的情况下写作时。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="llm-用户忘记了他们刚刚写的内容"&gt;LLM 用户忘记了他们刚刚写的内容&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;在任务后访谈中：
+&lt;ul&gt;
+&lt;li&gt;83.3% 的 LLM 用户无法引用他们刚刚写的文章中的一句话。&lt;/li&gt;
+&lt;li&gt;相比之下，88.9% 的搜索和仅使用 Brain 的用户 &lt;em&gt;能够&lt;/em&gt; 准确引用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;0% 的 LLM 用户可以给出 &lt;em&gt;正确的引用&lt;/em&gt; ，但大多数 Brain-only 和 Search 用户可以。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="人工智能的使用扰乱了记忆和学习途径"&gt;人工智能的使用扰乱了记忆和学习途径&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;之前使用过 LLM 的参与者（然后在第 4 节课中不使用 LLM 进行写作）表现如下：
+&lt;ul&gt;
+&lt;li&gt;记忆力较弱&lt;/li&gt;
+&lt;li&gt;降低 alpha 和 beta 神经参与度&lt;/li&gt;
+&lt;li&gt;以牺牲努力学习为代价， &lt;em&gt;认知适应趋向&lt;/em&gt; 于被动和“效率”。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="llm-学员感觉与工作脱节"&gt;LLM 学员感觉与工作脱节&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;当被问及作者身份时：
+&lt;ul&gt;
+&lt;li&gt;LLM 用户给出了“50/50”或“70％是我的”这样的回答。&lt;/li&gt;
+&lt;li&gt;有些人根本不声称拥有所有权。&lt;/li&gt;
+&lt;li&gt;仅大脑组的参与者几乎一致表示拥有完全的所有权。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="从法学硕士转为脑力运用并不能完全恢复功能"&gt;从法学硕士转为脑力运用并不能完全恢复功能&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;第四节：LLM-to-Brain 参与者表现出挥之不去的认知缺陷，无法恢复到原来（第一节）的大脑活动模式。&lt;/li&gt;
+&lt;li&gt;即使停止使用人工智能后，他们的神经活动仍然低于基线。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="搜索引擎用户表现出更健康的大脑参与度"&gt;搜索引擎用户表现出更健康的大脑参与度&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;搜索用户保持了更强的执行功能、记忆激活和引用回忆。&lt;/li&gt;
+&lt;li&gt;EEG 数据显示枕骨和顶骨激活更加强劲，支持视觉处理和认知努力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="人工智能依赖导致认知卸载"&gt;人工智能依赖导致“认知卸载”&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;研究人员注意到神经效率适应的趋势：大脑基本上“放弃”了合成和记忆所需的努力。&lt;/li&gt;
+&lt;li&gt;这种改编导致了被动性、编辑极少以及概念整合度低。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 id="短期收益长期认知债务"&gt;短期收益，长期认知债务&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;尽管获得了评委的不错评分，但法学硕士组的文章表现如下：
+&lt;ul&gt;
+&lt;li&gt;缺乏战略整合。&lt;/li&gt;
+&lt;li&gt;使用较少的多样化结构。&lt;/li&gt;
+&lt;li&gt;更短，更机械化。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;随着时间的推移，该团队的 &lt;strong&gt;参与度、绩效和自我报告的满意度持续下降&lt;/strong&gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;根据这项研究，随着全球越来越多的人口开始依赖人工智能来完成复杂的任务，我们的认知能力和创造能力似乎将急剧下降。&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="麻省理工学院研究发现人工智能会重新编程大脑导致认知能力下降">麻省理工学院研究发现人工智能会重新编程大脑，导致认知能力下降</h2>
+<p>作者： <strong><a href="https://x.com/NicHulscher">Nicolas Hulscher，公共卫生硕士</a></strong></p>
+<p>麻省理工学院的一项新研究题为《 <strong><a href="https://arxiv.org/abs/2506.08872">ChatGPT 下的大脑：使用人工智能助手进行论文写作时认知债务的积累》</a> ，</strong> 发现使用 ChatGPT 辅助写作会导致长期认知损害——可以通过脑电图扫描测量。反复依赖 ChatGPT 的学生表现出 <strong>神经连接减弱、记忆力受损以及</strong> <strong>对自身写作的</strong> 自主感减弱。虽然人工智能生成的内容通常得分很高，但其背后的大脑却在关闭。</p>
+<p><img loading="lazy" src="https://i0.wp.com/substackcdn.com/image/fetch/%24s_%217_Vh%21%2Cw_2400%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc0192a7-cf35-4b80-9095-8daab6f24ed9_1753x1188.png?w=1200&ssl=1"></p>
+<p>研究结果清晰可见：像 ChatGPT 和 Grok 这样的大型语言模型 (LLM) 不仅能帮助学生写作，还能训练大脑放松。以下是研究人员的发现：</p>
+<hr>
+<h4 id="人工智能的使用导致大脑连通性下降">人工智能的使用导致大脑连通性下降</h4>
+<ul>
+<li>脑电图扫描显示，随着对外部工具的依赖性增加，大脑中的神经连接系统性地缩小：
+<ul>
+<li><strong>仅有大脑的群体：</strong> 最强、最广泛的连接性。</li>
+<li><strong>搜索引擎组：</strong> 中级。</li>
+<li><strong>LLM 组：</strong> alpha、beta、delta 和 theta 波段之间的连接性最弱。</li>
+</ul>
+</li>
+<li>LLM 的使用导致批判性注意力和视觉处理网络参与度不足，尤其是在第 4 节中，当参与者尝试在没有人工智能的情况下写作时。</li>
+</ul>
+<hr>
+<h4 id="llm-用户忘记了他们刚刚写的内容">LLM 用户忘记了他们刚刚写的内容</h4>
+<ul>
+<li>在任务后访谈中：
+<ul>
+<li>83.3% 的 LLM 用户无法引用他们刚刚写的文章中的一句话。</li>
+<li>相比之下，88.9% 的搜索和仅使用 Brain 的用户 <em>能够</em> 准确引用。</li>
+</ul>
+</li>
+<li>0% 的 LLM 用户可以给出 <em>正确的引用</em> ，但大多数 Brain-only 和 Search 用户可以。</li>
+</ul>
+<hr>
+<h4 id="人工智能的使用扰乱了记忆和学习途径">人工智能的使用扰乱了记忆和学习途径</h4>
+<ul>
+<li>之前使用过 LLM 的参与者（然后在第 4 节课中不使用 LLM 进行写作）表现如下：
+<ul>
+<li>记忆力较弱</li>
+<li>降低 alpha 和 beta 神经参与度</li>
+<li>以牺牲努力学习为代价， <em>认知适应趋向</em> 于被动和“效率”。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="llm-学员感觉与工作脱节">LLM 学员感觉与工作脱节</h4>
+<ul>
+<li>当被问及作者身份时：
+<ul>
+<li>LLM 用户给出了“50/50”或“70％是我的”这样的回答。</li>
+<li>有些人根本不声称拥有所有权。</li>
+<li>仅大脑组的参与者几乎一致表示拥有完全的所有权。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="从法学硕士转为脑力运用并不能完全恢复功能">从法学硕士转为脑力运用并不能完全恢复功能</h4>
+<ul>
+<li>第四节：LLM-to-Brain 参与者表现出挥之不去的认知缺陷，无法恢复到原来（第一节）的大脑活动模式。</li>
+<li>即使停止使用人工智能后，他们的神经活动仍然低于基线。</li>
+</ul>
+<hr>
+<h4 id="搜索引擎用户表现出更健康的大脑参与度">搜索引擎用户表现出更健康的大脑参与度</h4>
+<ul>
+<li>搜索用户保持了更强的执行功能、记忆激活和引用回忆。</li>
+<li>EEG 数据显示枕骨和顶骨激活更加强劲，支持视觉处理和认知努力。</li>
+</ul>
+<hr>
+<h4 id="人工智能依赖导致认知卸载">人工智能依赖导致“认知卸载”</h4>
+<ul>
+<li>研究人员注意到神经效率适应的趋势：大脑基本上“放弃”了合成和记忆所需的努力。</li>
+<li>这种改编导致了被动性、编辑极少以及概念整合度低。</li>
+</ul>
+<hr>
+<h4 id="短期收益长期认知债务">短期收益，长期认知债务</h4>
+<ul>
+<li>尽管获得了评委的不错评分，但法学硕士组的文章表现如下：
+<ul>
+<li>缺乏战略整合。</li>
+<li>使用较少的多样化结构。</li>
+<li>更短，更机械化。</li>
+</ul>
+</li>
+<li>随着时间的推移，该团队的 <strong>参与度、绩效和自我报告的满意度持续下降</strong> 。</li>
+</ul>
+<hr>
+<p>根据这项研究，随着全球越来越多的人口开始依赖人工智能来完成复杂的任务，我们的认知能力和创造能力似乎将急剧下降。</p>
+<p>有一点很明确：如果你目前正在使用人工智能，请定期休息，并让你的大脑有机会完成工作。否则，你可能会面临严重的认知损害和依赖。</p>
+<p>机器不仅接管了我们的工作，它们还接管了我们的思想。</p>
+<p>实际上我们人脑和LLM一样，输入影响输出，如果没有经常思考的训练，脑子会退化。所以不要把思考外包给AI</p>
+]]></content:encoded></item></channel></rss>

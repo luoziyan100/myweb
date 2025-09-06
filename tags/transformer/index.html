@@ -37,7 +37,7 @@ Transformer架构： 由多个层堆叠而成，利用自注意力机制捕捉�
 原材料： 最初的输入文本（比如一个句子）。
 第一道工序（第一层）： 比如，把每个单词转换成一个数字表示（词嵌入）。
 第二道工序（第二层）： 比如，分析每个单词和句子中其他单词的关系（自注意力机制）。
-...</p></div><footer class=entry-footer><span title='2025-03-09 00:00:00 +0800 CST'>2025年3月9日</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;448 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 探秘AI大脑：我是如何理解一句话的" href=https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understanding/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>解构Transformer：注意力机制的深度解析</h2></header><div class=entry-content><p>Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。
+...</p></div><footer class=entry-footer><span title='2025-03-09 00:00:00 +0800 CST'>2025年3月9日</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;448 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 探秘AI大脑：我是如何理解一句话的" href=https://luoziyan100.github.io/myweb/posts/2025/3%E6%9C%88%E4%BB%BD/2025-03-9-ai-language-understanding/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2 class=entry-hint-parent>解构Transformer：注意力机制的深度解析</h2></header><div class=entry-content><p>Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。
 1. 注意力机制的起源 注意力机制最初源于人类视觉感知的启发。当我们观察复杂场景时，大脑会自动聚焦于相关细节而忽略无关信息。2014年，Bahdanau等人首次将注意力机制引入神经机器翻译任务，使模型能够在生成翻译时动态聚焦于源句子的相关部分。
 Transformer架构中的注意力机制是"自注意力"(Self-Attention)的一种形式，它允许模型考虑序列中所有词之间的关系，而不仅仅是局部上下文。这一机制为模型提供了捕获长距离依赖关系的能力，这是传统RNN和CNN架构的主要局限之一。
 2. 自注意力机制的数学原理 Transformer中的自注意力机制可以表述为对查询向量(Query)、键向量(Key)和值向量(Value)的操作。给定输入序列X，我们首先通过三个不同的变换矩阵W^Q, W^K, W^V计算查询、键和值：
@@ -51,7 +51,7 @@ Q = XW^Q K = XW^K V = XW^V 接下来，通过查询和键的点积计算注意�
 4.1 稀疏注意力 稀疏注意力机制如Block Sparse Attention和Longformer只计算部分词对之间的注意力分数，通常基于局部性假设或预定义的稀疏模式。这将复杂度降至O(n log(n))或更低。
 4.2 线性注意力 Performer和Linear Transformer等模型使用核方法近似标准注意力，将复杂度降至O(n)。例如，Performer使用随机特征图将注意力计算重写为：
 \text{Attention}(Q, K, V) \approx \phi(Q)(\phi(K)^T V) / (\phi(Q)\phi(K)^T \mathbf{1}) 其中φ是随机特征映射，允许我们通过改变乘法顺序将计算复杂度从O(n²)降至O(n)。
-...</p></div><footer class=entry-footer><span title='2025-03-08 00:00:00 +0800 CST'>2025年3月8日</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;93 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 解构Transformer：注意力机制的深度解析" href=https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://luoziyan100.github.io/myweb/>yan的AI时代之旅</a></span> ·
+...</p></div><footer class=entry-footer><span title='2025-03-08 00:00:00 +0800 CST'>2025年3月8日</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;93 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 解构Transformer：注意力机制的深度解析" href=https://luoziyan100.github.io/myweb/posts/2025/3%E6%9C%88%E4%BB%BD/2025-03-08-transformer-optimization/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://luoziyan100.github.io/myweb/>yan的AI时代之旅</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>

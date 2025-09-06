@@ -14,7 +14,7 @@ Q = XW^Q K = XW^K V = XW^V 接下来，通过查询和键的点积计算注意�
 4.1 稀疏注意力 稀疏注意力机制如Block Sparse Attention和Longformer只计算部分词对之间的注意力分数，通常基于局部性假设或预定义的稀疏模式。这将复杂度降至O(n log(n))或更低。
 4.2 线性注意力 Performer和Linear Transformer等模型使用核方法近似标准注意力，将复杂度降至O(n)。例如，Performer使用随机特征图将注意力计算重写为：
 \text{Attention}(Q, K, V) \approx \phi(Q)(\phi(K)^T V) / (\phi(Q)\phi(K)^T \mathbf{1}) 其中φ是随机特征映射，允许我们通过改变乘法顺序将计算复杂度从O(n²)降至O(n)。
-...</p></div><footer class=entry-footer><span title='2025-03-08 00:00:00 +0800 CST'>2025年3月8日</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;93 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 解构Transformer：注意力机制的深度解析" href=https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://luoziyan100.github.io/myweb/>yan的AI时代之旅</a></span> ·
+...</p></div><footer class=entry-footer><span title='2025-03-08 00:00:00 +0800 CST'>2025年3月8日</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;93 words&nbsp;·&nbsp;yan</footer><a class=entry-link aria-label="post link to 解构Transformer：注意力机制的深度解析" href=https://luoziyan100.github.io/myweb/posts/2025/3%E6%9C%88%E4%BB%BD/2025-03-08-transformer-optimization/></a></article></main><footer class=footer><span>&copy; 2025 <a href=https://luoziyan100.github.io/myweb/>yan的AI时代之旅</a></span> ·
 <span>Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
 <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentColor"><path d="M12 6H0l6-6z"/></svg>

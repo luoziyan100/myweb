@@ -264,8 +264,7 @@
 <p>它将推荐系统的成功架构应用到了大语言模型中，并提出了一种“双模型”解耦设计：
 从“单体式思考”到“双脑协同”：让一个庞大的模型包揽检索、思考、生成所有任务（所谓的“单体式思考模型”）是缓慢且昂贵的。突破点在于将任务解耦：一个“快而专”的上下文模型负责以极高速度处理和生成个性化上下文，另一个“大而强”的核心模型则专注于最终的复杂推理和生成。</p>
 <p>以前的上下文是由人主导构建，以后是由一个小模型主导构建。</p>
-]]></content:encoded></item><item><title>不要构建多智能体</title><link>https://luoziyan100.github.io/myweb/posts/2025-8-31-%E4%B8%8D%E8%A6%81%E6%9E%84%E5%BB%BA%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-8-31-%E4%B8%8D%E8%A6%81%E6%9E%84%E5%BB%BA%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</guid><description>&lt;h1 id="不要构建多智能体"&gt;不要构建多智能体&lt;/h1&gt;
-&lt;p&gt;大语言模型（LLM）智能体的框架一直令人意外地失望。我想根据我们自己的试错经验，提供一些构建智能体的原则，并解释为什么一些诱人的想法在实践中实际上相当糟糕。&lt;/p&gt;
+]]></content:encoded></item><item><title>不要构建多智能体</title><link>https://luoziyan100.github.io/myweb/posts/2025-8-31-%E4%B8%8D%E8%A6%81%E6%9E%84%E5%BB%BA%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</link><pubDate>Sun, 31 Aug 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-8-31-%E4%B8%8D%E8%A6%81%E6%9E%84%E5%BB%BA%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93/</guid><description>&lt;p&gt;大语言模型（LLM）智能体的框架一直令人意外地失望。我想根据我们自己的试错经验，提供一些构建智能体的原则，并解释为什么一些诱人的想法在实践中实际上相当糟糕。&lt;/p&gt;
 &lt;h2 id="上下文工程原理"&gt;上下文工程原理&lt;/h2&gt;
 &lt;p&gt;我们将逐步遵循以下原则：&lt;/p&gt;
 &lt;ol&gt;
@@ -333,8 +332,7 @@
 ​&lt;/p&gt;
 &lt;p&gt;编辑应用模型 ​
 2024年，许多模型在编辑代码方面表现很差。编码代理、IDE、应用构建器等（包括Devin）的常见做法是使用“编辑应用模型”。其核心思想是，给定你想要的更改的Markdown解释，让一个小模型重写整个文件实际上比让大模型输出格式正确的差异更可靠。因此，构建者让大模型输出代码编辑的Markdown解释，然后将这些Markdown解释提供给小模型，由小模型实际重写文件。然而，这些系统仍然存在很多问题。例如，小模型常常会误解大模型的指令，由于指令中最细微的歧义而进行错误的编辑。如今，编辑决策和应用更多地由单个模型在一个操作中完成。​
-​&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="不要构建多智能体">不要构建多智能体</h1>
-<p>大语言模型（LLM）智能体的框架一直令人意外地失望。我想根据我们自己的试错经验，提供一些构建智能体的原则，并解释为什么一些诱人的想法在实践中实际上相当糟糕。</p>
+​&lt;/p&gt;</description><content:encoded><![CDATA[<p>大语言模型（LLM）智能体的框架一直令人意外地失望。我想根据我们自己的试错经验，提供一些构建智能体的原则，并解释为什么一些诱人的想法在实践中实际上相当糟糕。</p>
 <h2 id="上下文工程原理">上下文工程原理</h2>
 <p>我们将逐步遵循以下原则：</p>
 <ol>
@@ -680,8 +678,7 @@
 <p> •  该 token 自身的语义信息： 这是由最初的词嵌入提供的。</p>
 <p> •  该 token 与句子中其他 token 的关系： 这是通过自注意力机制计算得到的。注意力权重决定了其他 token 对当前 token 的重要程度。</p>
 <p>  •  上下文信息： 通过加权求和，将其他 token 的信息（V 向量）融入到当前 token 的表示中。</p>
-]]></content:encoded></item><item><title>探秘AI：AI是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</guid><description>&lt;h1 id="探秘aiai是如何理解一句话的"&gt;探秘AI：AI是如何理解一句话的&lt;/h1&gt;
-&lt;p&gt;当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&amp;quot;理解&amp;quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。&lt;/p&gt;
+]]></content:encoded></item><item><title>探秘AI：AI是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</guid><description>&lt;p&gt;当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&amp;quot;理解&amp;quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。&lt;/p&gt;
 &lt;h2 id="1-语言理解的基础从文本到数字"&gt;1. 语言理解的基础：从文本到数字&lt;/h2&gt;
 &lt;h3 id="11-词嵌入将词语转化为向量"&gt;1.1 词嵌入：将词语转化为向量&lt;/h3&gt;
 &lt;p&gt;AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是&lt;strong&gt;词嵌入&lt;/strong&gt;（Word Embeddings）。&lt;/p&gt;
@@ -723,8 +720,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;向量表示&lt;/strong&gt;：&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="探秘aiai是如何理解一句话的">探秘AI：AI是如何理解一句话的</h1>
-<p>当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&quot;理解&quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。</p>
+&lt;p&gt;&lt;strong&gt;向量表示&lt;/strong&gt;：&lt;/p&gt;</description><content:encoded><![CDATA[<p>当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&quot;理解&quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。</p>
 <h2 id="1-语言理解的基础从文本到数字">1. 语言理解的基础：从文本到数字</h2>
 <h3 id="11-词嵌入将词语转化为向量">1.1 词嵌入：将词语转化为向量</h3>
 <p>AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是<strong>词嵌入</strong>（Word Embeddings）。</p>
@@ -812,8 +808,7 @@
 <h2 id="结论">结论</h2>
 <p>现代AI系统通过复杂的神经网络架构、大规模预训练和精细的语义表示，已经能够在一定程度上&quot;理解&quot;人类语言。尽管这种理解与人类的语言理解有本质区别，但其进步已经使人机交流变得比过去任何时候都更加自然和有效。</p>
 <p>随着研究的深入，我们有理由期待AI语言理解能力将继续提升，逐步缩小与人类语言理解的差距。</p>
-]]></content:encoded></item><item><title>解构Transformer：注意力机制的深度解析</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/</guid><description>&lt;h1 id="解构transformer注意力机制的深度解析"&gt;解构Transformer：注意力机制的深度解析&lt;/h1&gt;
-&lt;p&gt;Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。&lt;/p&gt;
+]]></content:encoded></item><item><title>解构Transformer：注意力机制的深度解析</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-08-transformer-optimization/</guid><description>&lt;p&gt;Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。&lt;/p&gt;
 &lt;h2 id="1-注意力机制的起源"&gt;1. 注意力机制的起源&lt;/h2&gt;
 &lt;p&gt;注意力机制最初源于人类视觉感知的启发。当我们观察复杂场景时，大脑会自动聚焦于相关细节而忽略无关信息。2014年，Bahdanau等人首次将注意力机制引入神经机器翻译任务，使模型能够在生成翻译时动态聚焦于源句子的相关部分。&lt;/p&gt;
 &lt;p&gt;Transformer架构中的注意力机制是&amp;quot;自注意力&amp;quot;(Self-Attention)的一种形式，它允许模型考虑序列中所有词之间的关系，而不仅仅是局部上下文。这一机制为模型提供了捕获长距离依赖关系的能力，这是传统RNN和CNN架构的主要局限之一。&lt;/p&gt;
@@ -841,8 +836,7 @@
 &lt;h3 id="42-线性注意力"&gt;4.2 线性注意力&lt;/h3&gt;
 &lt;p&gt;Performer和Linear Transformer等模型使用核方法近似标准注意力，将复杂度降至O(n)。例如，Performer使用随机特征图将注意力计算重写为：&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;\text{Attention}(Q, K, V) \approx \phi(Q)(\phi(K)^T V) / (\phi(Q)\phi(K)^T \mathbf{1})
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中φ是随机特征映射，允许我们通过改变乘法顺序将计算复杂度从O(n²)降至O(n)。&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="解构transformer注意力机制的深度解析">解构Transformer：注意力机制的深度解析</h1>
-<p>Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。</p>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中φ是随机特征映射，允许我们通过改变乘法顺序将计算复杂度从O(n²)降至O(n)。&lt;/p&gt;</description><content:encoded><![CDATA[<p>Transformer架构自2017年问世以来彻底改变了自然语言处理领域。从BERT到GPT，从T5到LLaMA，几乎所有当前最先进的语言模型都基于Transformer架构。本文将深入探讨Transformer的核心——注意力机制，包括其数学原理、计算过程和最新的优化方法。</p>
 <h2 id="1-注意力机制的起源">1. 注意力机制的起源</h2>
 <p>注意力机制最初源于人类视觉感知的启发。当我们观察复杂场景时，大脑会自动聚焦于相关细节而忽略无关信息。2014年，Bahdanau等人首次将注意力机制引入神经机器翻译任务，使模型能够在生成翻译时动态聚焦于源句子的相关部分。</p>
 <p>Transformer架构中的注意力机制是&quot;自注意力&quot;(Self-Attention)的一种形式，它允许模型考虑序列中所有词之间的关系，而不仅仅是局部上下文。这一机制为模型提供了捕获长距离依赖关系的能力，这是传统RNN和CNN架构的主要局限之一。</p>

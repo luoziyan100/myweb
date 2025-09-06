@@ -222,8 +222,7 @@
 <p> •  该 token 自身的语义信息： 这是由最初的词嵌入提供的。</p>
 <p> •  该 token 与句子中其他 token 的关系： 这是通过自注意力机制计算得到的。注意力权重决定了其他 token 对当前 token 的重要程度。</p>
 <p>  •  上下文信息： 通过加权求和，将其他 token 的信息（V 向量）融入到当前 token 的表示中。</p>
-]]></content:encoded></item><item><title>探秘AI：AI是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</guid><description>&lt;h1 id="探秘aiai是如何理解一句话的"&gt;探秘AI：AI是如何理解一句话的&lt;/h1&gt;
-&lt;p&gt;当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&amp;quot;理解&amp;quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。&lt;/p&gt;
+]]></content:encoded></item><item><title>探秘AI：AI是如何理解一句话的</title><link>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</link><pubDate>Sat, 08 Mar 2025 00:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025-03-9-ai-language-understand/</guid><description>&lt;p&gt;当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&amp;quot;理解&amp;quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。&lt;/p&gt;
 &lt;h2 id="1-语言理解的基础从文本到数字"&gt;1. 语言理解的基础：从文本到数字&lt;/h2&gt;
 &lt;h3 id="11-词嵌入将词语转化为向量"&gt;1.1 词嵌入：将词语转化为向量&lt;/h3&gt;
 &lt;p&gt;AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是&lt;strong&gt;词嵌入&lt;/strong&gt;（Word Embeddings）。&lt;/p&gt;
@@ -265,8 +264,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;向量表示&lt;/strong&gt;：&lt;/p&gt;</description><content:encoded><![CDATA[<h1 id="探秘aiai是如何理解一句话的">探秘AI：AI是如何理解一句话的</h1>
-<p>当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&quot;理解&quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。</p>
+&lt;p&gt;&lt;strong&gt;向量表示&lt;/strong&gt;：&lt;/p&gt;</description><content:encoded><![CDATA[<p>当我们与ChatGPT、Siri或其他AI助手对话时，它们似乎能够理解我们的语言并做出适当回应。但AI系统实际上是如何&quot;理解&quot;人类语言的呢？本文将深入探讨现代AI系统处理和理解一句话的完整过程。</p>
 <h2 id="1-语言理解的基础从文本到数字">1. 语言理解的基础：从文本到数字</h2>
 <h3 id="11-词嵌入将词语转化为向量">1.1 词嵌入：将词语转化为向量</h3>
 <p>AI系统无法直接处理文本，它们需要将文本转换为数字形式。这一过程的基础是<strong>词嵌入</strong>（Word Embeddings）。</p>

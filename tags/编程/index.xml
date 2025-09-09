@@ -4,61 +4,7 @@
 &lt;p&gt;2025年1月5日&lt;/p&gt;
 &lt;p&gt;阅读时间 15 分钟&lt;/p&gt;
 &lt;p&gt;分享：&lt;/p&gt;
-&lt;p&gt;人工智能（AI）已然颠覆全局，为各行各业许下效率、产能与创新的飞跃。然而，潜力虽好，许多公司在落地AI项目时却困难重重，结果往往未及预期。&lt;/p&gt;
-&lt;p&gt;对于期望有效利用AI的组织而言，探究失败的根源至关重要。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;本文将探讨企业中AI项目失败的常见原因，并提供克服障碍的实用策略，以确保AI技术的成功整合与优化。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id="ai项目为何折戟"&gt;AI项目为何折戟&lt;/h2&gt;
-&lt;p&gt;AI项目之路，关卡重重，常常阻碍其进展与实效。其结果是，多数项目最终半途而废。那么，失败率究竟有多高？&lt;/p&gt;
-&lt;p&gt;据《华尔街日报》近期一篇文章指出，AI项目的失败率高达50%。&lt;/p&gt;
-&lt;p&gt;&lt;img loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/The-failure-rate-of-AI-projects-is-50-percent-1024x573.png"&gt;&lt;/p&gt;
-&lt;p&gt;此外，IBM在其《2023年全球AI采用指数》报告中提到，导致AI项目失败的首要原因包括：AI专业知识有限（33%）、数据复杂性（25%）和伦理问题（23%）。&lt;/p&gt;
-&lt;p&gt;让我们来看几个AI失败的实例，探究其为何没能达成积极的成果。&lt;/p&gt;
-&lt;h2 id="ai失败实例"&gt;AI失败实例&lt;/h2&gt;
-&lt;h3 id="meta的galactica-ai"&gt;Meta的Galactica AI&lt;/h3&gt;
-&lt;p&gt;2022年11月，Meta发布了名为Galactica的大型语言模型（LLM），并将其誉为一款能生成和总结科学内容的开创性工具。&lt;/p&gt;
-&lt;p&gt;然而，Meta这款被寄予厚望的AI，其首次亮相很快就因缺陷毕露而演变成一场灾难。&lt;/p&gt;
-&lt;p&gt;Galactica的设想是成为一个精密的AI，通过对复杂课题生成准确简洁的摘要，从而革新科学研究。Meta旨在为科研人员和教育者提供一个获取和传播科学知识的强大工具。&lt;/p&gt;
-&lt;p&gt;尽管目标宏大，Galactica的表现却远未达到预期。它没有提供可靠、信息丰富的内容，反而输出了大量充斥着不准确、偏见和无稽之谈的文本。&lt;/p&gt;
-&lt;p&gt;研究人员和用户很快发现，该AI生成的摘要常常具有误导性且缺乏可信度，这使得Galactica作为一个科学信息来源完全不可靠。&lt;/p&gt;
-&lt;p&gt;人们担忧，这款AI可能会传播错误信息，损害科学言论的严肃性。顶尖的研究者和机构纷纷发声批评，警告世人依赖Galactica获取准确信息的危险。&lt;/p&gt;
-&lt;p&gt;面对日益高涨的公众抵制和声誉受损的威胁，Meta别无选择，在Galactica发布数天后便叫停了该项目，等同于承认了这次雄心勃勃的AI探索以失败告终。&lt;/p&gt;
-&lt;p&gt;Galactica的失败是一个警示，告诫我们AI技术固有的风险与局限，尤其是在科学研究等敏感领域。这场风波凸显了在开发和部署AI系统时，严格测试、验证和监督的重要性。&lt;/p&gt;
-&lt;h3 id="加拿大航空的ai聊天机器人"&gt;加拿大航空的AI聊天机器人&lt;/h3&gt;
-&lt;p&gt;2022年，加拿大航空的一名聊天机器人向一位顾客提供了关于丧亲旅行折扣的错误信息，导致该公司面临法律诉讼。&lt;/p&gt;
-&lt;p&gt;尽管航空公司辩称，应为错误信息负责的是聊天机器人而非公司，但法庭最终裁定加拿大航空败诉。此案开创了美国法庭的先例，并凸显了AI生成内容可能带来的法律影响。&lt;/p&gt;
-&lt;p&gt;此外，这项裁决也引发了关于在客户互动中使用AI技术的公司，其问责与责任归属的问题。随着AI在商业运营中扮演的角色日益重要，企业建立健全的机制来监控并确保AI生成内容的准确性，已变得至关重要。&lt;/p&gt;
-&lt;p&gt;此案提醒我们，在部署AI时，透明、准确和问责至关重要，尤其是在客户信任与满意度至上的行业。&lt;/p&gt;
-&lt;h3 id="纽约市的聊天机器人"&gt;纽约市的聊天机器人&lt;/h3&gt;
-&lt;p&gt;纽约市一个旨在协助小企业的聊天机器人，给出了错误的法律建议。该机器人错误地暗示某些行为是合法的，例如解雇举报性骚扰的员工，或拒绝让员工保留其脏辫发型。&lt;/p&gt;
-&lt;p&gt;此外，它还提供了关于废物和污水处理规定的不准确信息，并暗示餐厅可以提供被老鼠接触过的食物。&lt;/p&gt;
-&lt;p&gt;为应对争议，该聊天机器人旁边的免责声明现已更新，以强调它不能提供法律建议。&lt;/p&gt;
-&lt;h2 id="机器学习项目为何失败"&gt;机器学习项目为何失败？&lt;/h2&gt;
-&lt;p&gt;随着企业越来越多地投资于AI驱动的解决方案以获取竞争优势，理解机器学习项目错综复杂的环境在当今技术生态中至关重要。&lt;/p&gt;
-&lt;p&gt;尽管机器学习前景广阔，但现实是，大多数AI项目都会遇到意想不到的障碍，无法交付预期成果。&lt;/p&gt;
-&lt;p&gt;在本节中，我们将深入探讨机器学习项目失败的多方面原因，揭示导致其衰落的技术、组织和战略因素之间复杂的相互作用。&lt;/p&gt;
-&lt;p&gt;&lt;img loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/What-are-the-reasons-behind-the-failure-of-machine-learning-projects-1024x573.png"&gt;&lt;/p&gt;
-&lt;h3 id="1-ai项目的风险与复杂性"&gt;1. AI项目的风险与复杂性&lt;/h3&gt;
-&lt;p&gt;尖端的机器学习模型和算法为工业应用提供了广阔天地。从生成复杂内容的简洁摘要，到精细分类客户反馈，再到通过GPT-4等创新技术组织非结构化数据，机器学习在不同领域的应用潜力前所未有。&lt;/p&gt;
-&lt;p&gt;然而，随着机器学习模型训练所用的数据集日益多样——从传统的电子表格到复杂的音视频记录——风险管理成为一项艰巨的挑战。这种复杂性愈发凸显了制定稳健的风险管理策略以有效应对未知挑战的重要性。&lt;/p&gt;
-&lt;p&gt;许多期望驾驭AI变革力量的组织，未能主动管理因数据多样且复杂而产生的风险，这正是AI项目失败的原因。实际上，商业AI项目的失败，往往与未能充分预见和减轻部署先进机器学习技术时固有的风险有关。&lt;/p&gt;
-&lt;h3 id="2-不合格的数据模型"&gt;2. 不合格的数据模型&lt;/h3&gt;
-&lt;p&gt;Gartner指出，85%的AI项目之所以失败，主要原因是数据不准确和带有偏见。准确的数据收集是成功部署AI项目的两大障碍。&lt;/p&gt;
-&lt;p&gt;数据的敏感性也可能是原因之一，尤其是在医疗等受到严格监管的领域。不准确的数据会损害AI模型的完整性，削弱其生成可靠见解和建议的能力。&lt;/p&gt;
-&lt;p&gt;此外，数据中的偏见可能固化系统性的不平等，并无意中导致歧视性结果，给组织带来重大的道德和法律问题。&lt;/p&gt;
-&lt;p&gt;再者，除了数据准确性和偏见的挑战，AI项目的成功部署还取决于有效的数据收集实践。确保高质量、相关数据集的可用性，对于训练能够准确反映真实世界场景并提供可行见解的AI模型至关重要。然而，数据收集工作常常受到数据孤岛、互操作性问题和隐私考量等实际复杂性的阻碍。&lt;/p&gt;
-&lt;p&gt;你可能拥有海量数据，但其中有用的却寥寥无几。大量数据与可用相关数据短缺的悖论并存，导致了大多数AI项目的失败。&lt;/p&gt;
-&lt;h3 id="3-缺乏明确的目标和期望"&gt;3. 缺乏明确的目标和期望&lt;/h3&gt;
-&lt;p&gt;许多项目源于IT部门对前沿技术的迷恋，并获得了可能缺乏深度理解、无法提出切身问题的业务高管的批准。因此，这类项目往往缺乏焦点，起步模糊，范围界定不清。&lt;/p&gt;
-&lt;p&gt;根据REXER Analytics在2023年的一项调查，仅34%的数据科学家表示，项目目标在工作开始前通常有明确的定义。&lt;/p&gt;
-&lt;p&gt;此外，这些项目通常产生的商业成果也不确定，尤其是在试图量化诸如“提升品牌价值”或“改善运营效率”这类模糊目标时。客观评估这些无形目标的影响极具挑战性，这使得成功与否难以衡量，也阻碍了展示可观投资回报的能力。&lt;/p&gt;
-&lt;h3 id="4-模型套用而非定制"&gt;4. 模型“套”用，而非“定”制&lt;/h3&gt;
-&lt;p&gt;导致AI项目失败的一个关键陷阱，在于未能根据企业独特的业务需求和情境定制AI模型。现成的AI解决方案或许方便，但往往缺乏解决个别组织复杂问题所需的针对性。若未能根据具体的业务需求调整AI模型，可能导致性能不佳，因为这些通用模型可能无法准确捕捉数据中的细微差别或问题领域的复杂性。&lt;/p&gt;
-&lt;p&gt;此外，不定制AI模型可能导致技术能力与项目预期成果之间的错配。&lt;/p&gt;
-&lt;p&gt;没有定制，AI系统可能无法与组织的目标和限制对齐，最终阻碍其交付有意义的价值。&lt;/p&gt;
-&lt;p&gt;定制化能让组织针对特定用例优化AI模型，确保技术有效应对其独特的挑战和目标。因此，忽视对AI模型的量身定制会严重损害AI项目的成功，阻碍其推动积极成果和实现可观商业效益的能力。&lt;/p&gt;
-&lt;h3 id="5-缺乏监督与治理"&gt;5. 缺乏监督与治理&lt;/h3&gt;
-&lt;p&gt;企业高管普遍存在一个误解，认为生成式AI是一种即插即用、立竿见影的技术。事实是，对许多AI项目而言，将AI与现有流程整合、用组织自身数据执行机器学习模型、以及协调AI项目与业务目标，都是艰巨的任务。&lt;/p&gt;
-&lt;p&gt;若使用机器学习模型来创建与业务相关的内容，却几乎没有个性化或微调，那么得到的响应将会过于笼统，或与品牌产品、客户需求无关。&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="ai项目为何失败数据决策者避坑指南">AI项目为何失败？数据决策者避坑指南</h2>
+&lt;p&gt;人工智能（AI）已然颠覆全局，为各行各业许下效率、产能与创新的飞跃。然而，潜力虽好，许多公司在落地AI项目时却困难重重，结果往往未及预期。&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="ai项目为何失败数据决策者避坑指南">AI项目为何失败？数据决策者避坑指南</h2>
 <p><strong>AI策略副总裁</strong></p>
 <p><img alt="AI项目为何失败？数据决策者避坑指南" loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/Why-AI-Projects-Fail-and-How-to-Prevent-It-A-Strategic-Guide-for-Data-Driven-Decision-Makers.png"></p>
 <p>2025年1月5日</p>
@@ -169,58 +115,7 @@
 <p>然而，AI并非没有缺陷。承认其不足至关重要，因为这为建设性地利用AI潜力、减轻风险以确保AI项目成功铺平了道路。</p>
 ]]></content:encoded></item><item><title>怎么学习编程</title><link>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-06-%E6%80%8E%E4%B9%88%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</link><pubDate>Sat, 06 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-06-%E6%80%8E%E4%B9%88%E5%AD%A6%E4%B9%A0%E7%BC%96%E7%A8%8B/</guid><description>&lt;p&gt;&lt;strong&gt;这是王垠《如何掌握所有编程语言》读后感&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;这是将王垠文章中的思想转化为一份可执行的、终极的学习蓝图。&lt;/p&gt;
-&lt;p&gt;这份指南的目的不是让你记住一万个零散的知识点，而是为你构建一个“心智框架”。当你遇到任何编程语言（无论是现存的还是未来的）时，你都可以将它的特性“挂”在这个框架的相应位置，从而瞬间理解它的设计哲学与应用场景。&lt;/p&gt;
-&lt;p&gt;我们将编程语言的所有特性，按照从具体到抽象，从微观到宏观的层次，分为五个核心层级。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id="如何学习编程语言的所有特性一份终极指南"&gt;&lt;strong&gt;如何学习编程语言的所有特性：一份终极指南&lt;/strong&gt;&lt;/h3&gt;
-&lt;h4 id="核心思想成为特性的主人而非语言的奴隶"&gt;&lt;strong&gt;核心思想：成为特性的主人，而非语言的奴隶&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;忘记“学习Python”或“学习Java”。你的目标是学习“变量”、“类型系统”、“并发模型”这些永恒的概念。一旦掌握了概念本身，任何语言都只是其特定语法（方言）的表达。&lt;/p&gt;
-&lt;h4 id="学习方法论锚定---抽象---对比---实现"&gt;&lt;strong&gt;学习方法论：锚定 -&amp;gt; 抽象 -&amp;gt; 对比 -&amp;gt; 实现&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;对于下述每一项特性，都遵循此四步法：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;锚定 (Anchor)&lt;/strong&gt;：选择一门你熟悉的“合理语言”（如Python, Java, C），首先通过它学会该特性的&lt;strong&gt;用法&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;抽象 (Abstract)&lt;/strong&gt;：用你自己的话，不依赖任何特定语法，描述这个特性的&lt;strong&gt;本质目的&lt;/strong&gt;。它解决了什么根本问题？比如，“函数”是为了“封装可复用的代码块，并给它命名”。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;对比 (Contrast)&lt;/strong&gt;：立即去查找2-3门不同设计哲学的语言，看它们是如何实现&lt;strong&gt;同一个特性&lt;/strong&gt;的。比如，对比Python、Java、C语言的&lt;code&gt;for&lt;/code&gt;循环。这个过程会剥离语法的外壳，让你直达特性的核心。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;实现 (Implement)&lt;/strong&gt;：这是大师级的最后一步。尝试用你已知的简单特性，去&lt;strong&gt;模拟实现&lt;/strong&gt;一个更高级的特性。比如，在C语言里用&lt;code&gt;struct&lt;/code&gt;和函数指针模拟一个简单的“对象”。这个过程会让你彻底内化该特性。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h3 id="编程语言特性的全景蓝图-the-grand-blueprint"&gt;&lt;strong&gt;编程语言特性的全景蓝图 (The Grand Blueprint)&lt;/strong&gt;&lt;/h3&gt;
-&lt;h4 id="第一层执行的基石-the-bedrock-of-execution"&gt;&lt;strong&gt;第一层：执行的基石 (The Bedrock of Execution)&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;这是所有编程语言都必须具备的、最基础的“原子”特性。它们是构建一切逻辑的砖块。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;变量与赋值 (Variables &amp;amp; Assignment)&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;本质&lt;/strong&gt;：为数据命名，并将其存储在内存中。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;探索点&lt;/strong&gt;：作用域（全局、局部、块级）、生命周期。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;基础数据类型 (Primitive Data Types)&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;本质&lt;/strong&gt;：语言内建的、最基本的数据种类。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;探索点&lt;/strong&gt;：整数（不同位宽）、浮点数（精度问题）、布尔值、字符。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;运算符 (Operators)&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;本质&lt;/strong&gt;：对数据进行操作的符号。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;探索点&lt;/strong&gt;：算术、比较、逻辑、位运算；运算符优先级和结合性。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;控制流 (Control Flow)&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;本质&lt;/strong&gt;：决定代码执行顺序的结构。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;探索点&lt;/strong&gt;：条件分支 (&lt;code&gt;if/else/switch&lt;/code&gt;)、循环 (&lt;code&gt;for/while/do-while&lt;/code&gt;)、跳转 (&lt;code&gt;break/continue/goto&lt;/code&gt;)、返回 (&lt;code&gt;return&lt;/code&gt;)。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;函数/过程 (Functions/Procedures)&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;本质&lt;/strong&gt;：代码的封装、抽象与复用。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;探索点&lt;/strong&gt;：参数传递（值传递 vs. 引用传递）、返回值、递归。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="第二层数据的组织-the-organization-of-data"&gt;&lt;strong&gt;第二层：数据的组织 (The Organization of Data)&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;当单个数据不足以表达复杂信息时，我们需要将它们组织起来。&lt;/p&gt;</description><content:encoded><![CDATA[<p><strong>这是王垠《如何掌握所有编程语言》读后感</strong></p>
+&lt;p&gt;这份指南的目的不是让你记住一万个零散的知识点，而是为你构建一个“心智框架”。当你遇到任何编程语言（无论是现存的还是未来的）时，你都可以将它的特性“挂”在这个框架的相应位置，从而瞬间理解它的设计哲学与应用场景。&lt;/p&gt;</description><content:encoded><![CDATA[<p><strong>这是王垠《如何掌握所有编程语言》读后感</strong></p>
 <p>这是将王垠文章中的思想转化为一份可执行的、终极的学习蓝图。</p>
 <p>这份指南的目的不是让你记住一万个零散的知识点，而是为你构建一个“心智框架”。当你遇到任何编程语言（无论是现存的还是未来的）时，你都可以将它的特性“挂”在这个框架的相应位置，从而瞬间理解它的设计哲学与应用场景。</p>
 <p>我们将编程语言的所有特性，按照从具体到抽象，从微观到宏观的层次，分为五个核心层级。</p>

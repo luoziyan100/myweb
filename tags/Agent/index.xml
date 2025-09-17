@@ -268,7 +268,7 @@
 <h2 id="guardrails-护栏">Guardrails (护栏)</h2>
 <p>设计良好的护栏 (guardrails) 可帮助您管理数据隐私风险（例如，防止系统提示泄露）或声誉风险（例如，强制执行符合品牌形象的模型行为）。您可以设置护栏来解决您已为用例识别的风险，并在发现新的漏洞时分层添加额外的护栏。护栏是任何基于 LLM 的部署的关键组成部分，但应与强大的身份验证和授权协议、严格的访问控制以及标准的软件安全措施相结合。</p>
 <p>把护栏想象成一个分层防御机制。虽然单个护栏不太可能提供足够的保护，但将多个专门的护栏结合使用可以创建更具弹性的 agent。</p>
-<p><img alt="alt" loading="lazy" src="/img/blog-images/image_copy.png"></p>
+<p><img alt="护栏分层防御机制" loading="lazy" src="/img/blog-images/image_copy.png"></p>
 <h3 id="护栏的类型">护栏的类型</h3>
 <ul>
 <li>

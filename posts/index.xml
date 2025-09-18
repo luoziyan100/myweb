@@ -145,7 +145,7 @@
 <p>让我们来详细探讨每种模式。</p>
 <h3 id="单-agent-系统">单 agent 系统</h3>
 <p>单个 agent 可以通过逐步添加工具来处理许多任务，从而保持复杂性可控，并简化评估和维护。每个新工具都能扩展其能力，而不会过早地迫使您去编排多个 agent。</p>
-<p><img alt="单agent系统" loading="lazy" src="/img/blog-images/image_single_agent.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_single_agent.png" alt="单agent系统" loading="lazy" decoding="async" /></p>
 <p>每种编排方法都需要一个&quot;运行&quot; (run) 的概念，通常实现为一个循环，让 agent 持续运行直到满足退出条件。 常见的退出条件包括工具调用、产生某种结构化输出、发生错误或达到最大轮次限制。</p>
 <p>例如，在 Agents SDK 中，agent 是使用 <code>Runner.run()</code> 方法启动的，该方法会在 LLM 上循环，直到：</p>
 <ol>
@@ -183,7 +183,7 @@
 <h3 id="管理者模式-manager-pattern">管理者模式 (Manager pattern)</h3>
 <p>管理者模式让一个中心的 LLM——“管理者”——通过工具调用无缝地编排一个由专门 agent 组成的网络。管理者不会丢失上下文或控制权，而是智能地在适当的时间将任务委派给正确的 agent，并毫不费力地将结果合成为一个连贯的交互。这确保了流畅、统一的用户体验，专门的能力随时待命。</p>
 <p>这种模式非常适合于您只想让一个 agent 控制工作流执行并与用户交互的工作流。</p>
-<p><img alt="管理范式" loading="lazy" src="/img/image.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_manage_agent.png" alt="管理范式" loading="lazy" decoding="async" /></p>
 <p>例如，以下是如何在 Agents SDK 中实现这种模式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> agents <span style="color:#f92672">import</span> Agent, Runner
 </span></span><span style="display:flex;"><span>
@@ -222,7 +222,7 @@
 <h3 id="去中心化模式-decentralized-pattern">去中心化模式 (Decentralized pattern)</h3>
 <p>在去中心化模式中，agent 可以将工作流执行“交接”给另一个 agent。交接是一种单向转移，允许一个 agent 将任务委派给另一个 agent。在 Agents SDK 中，交接是一种工具或函数。如果一个 agent 调用了一个交接函数，我们会立即在被交接的新 agent 上开始执行，同时转移最新的对话状态。</p>
 <p>这种模式涉及使用多个地位平等的 agent，其中一个 agent 可以直接将工作流的控制权交给另一个 agent。当您不需要单个 agent 保持中心控制或进行综合处理时，这是最佳选择——而是允许每个 agent 根据需要接管执行并与用户交互。</p>
-<p><img alt="alt" loading="lazy" src="/img/blog-images/image_agent.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_agent.png" alt="alt" loading="lazy" decoding="async" /></p>
 <p>例如，以下是如何使用 Agents SDK 为处理销售和支持的客户服务工作流实现去中心化模式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> agents <span style="color:#f92672">import</span> Agent, Runner
 </span></span><span style="display:flex;"><span>
@@ -268,7 +268,7 @@
 <h2 id="guardrails-护栏">Guardrails (护栏)</h2>
 <p>设计良好的护栏 (guardrails) 可帮助您管理数据隐私风险（例如，防止系统提示泄露）或声誉风险（例如，强制执行符合品牌形象的模型行为）。您可以设置护栏来解决您已为用例识别的风险，并在发现新的漏洞时分层添加额外的护栏。护栏是任何基于 LLM 的部署的关键组成部分，但应与强大的身份验证和授权协议、严格的访问控制以及标准的软件安全措施相结合。</p>
 <p>把护栏想象成一个分层防御机制。虽然单个护栏不太可能提供足够的保护，但将多个专门的护栏结合使用可以创建更具弹性的 agent。</p>
-<p><img alt="护栏分层防御机制" loading="lazy" src="/img/blog-images/image_copy.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_copy.png" alt="护栏分层防御机制" loading="lazy" decoding="async" /></p>
 <h3 id="护栏的类型">护栏的类型</h3>
 <ul>
 <li>
@@ -460,7 +460,7 @@
 <blockquote>
 <p>“2025 年最有价值的开发人员技能是什么？编写代码规范。”</p></blockquote>
 <h3 id="一个简单的-4-步框架将规范转化为行动使-ai-开发更加结构化可测试和可扩展">一个简单的 4 步框架，将规范转化为行动——使 AI 开发更加结构化、可测试和可扩展。</h3>
-<p><img loading="lazy" src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*00YXoxuIK7Uo7LnmxC03wQ.png"></p>
+<p><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*00YXoxuIK7Uo7LnmxC03wQ.png" alt="" loading="lazy" decoding="async" /></p>
 <p>这四个步骤为任何团队提供了一种清晰、可重复的方法，从氛围编码转向可靠的、规范驱动的开发。</p>
 <h2 id="人工智能原生开发的未来">人工智能原生开发的未来</h2>
 <p>展望未来，规格可能会变成：</p>
@@ -471,10 +471,10 @@
 </ul>
 <p><strong>剩下的唯一问题是：你会继续保持这种感觉——还是开始指定？</strong></p>
 ]]></content:encoded></item><item><title>最后的程序员</title><link>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-11-%E6%9C%80%E5%90%8E%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</link><pubDate>Thu, 11 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-11-%E6%9C%80%E5%90%8E%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98/</guid><description>&lt;p&gt;我们正在见证最后一代将想法手工转化为代码的人。&lt;/p&gt;
-&lt;p&gt;&lt;img alt="封面图片" loading="lazy" src="https://www.xipu.li/_next/image?url=%2Fimages%2Fthe-last-programmers%2Fsix-claude-code.jpg&amp;w=3840&amp;q=75"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.xipu.li/_next/image?url=%2Fimages%2Fthe-last-programmers%2Fsix-claude-code.jpg&amp;amp;w=3840&amp;amp;q=75" alt="封面图片" loading="lazy" decoding="async" /&gt;&lt;/p&gt;
 &lt;p&gt;要用振动代码，还是不要。这就是问题所在。&lt;/p&gt;
 &lt;p&gt;今年五月，我辞去了亚马逊的工作，加入了一家名为 &lt;a href="https://icon.com/"&gt;Icon&lt;/a&gt; 的初创公司。这是我职业生涯中最好的决定，但原因可能与你想象的不同。&lt;/p&gt;</description><content:encoded><![CDATA[<p>我们正在见证最后一代将想法手工转化为代码的人。</p>
-<p><img alt="封面图片" loading="lazy" src="https://www.xipu.li/_next/image?url=%2Fimages%2Fthe-last-programmers%2Fsix-claude-code.jpg&w=3840&q=75"></p>
+<p><img src="https://www.xipu.li/_next/image?url=%2Fimages%2Fthe-last-programmers%2Fsix-claude-code.jpg&amp;w=3840&amp;q=75" alt="封面图片" loading="lazy" decoding="async" /></p>
 <p>要用振动代码，还是不要。这就是问题所在。</p>
 <p>今年五月，我辞去了亚马逊的工作，加入了一家名为 <a href="https://icon.com/">Icon</a> 的初创公司。这是我职业生涯中最好的决定，但原因可能与你想象的不同。</p>
 <p>在亚马逊，我加入了 <a href="https://aws.amazon.com/q/developer/">亚马逊 Q 开发者</a> 团队，负责开发他们的人工智能编程助手。你可能会觉得身处亚马逊人工智能开发者工具的核心会很令人兴奋，但实际上却令人沮丧不已。亚马逊泡沫之外的人都能看出，我们在人工智能领域正遭遇惨败。由于缺乏真正的产品愿景，领导层一直在努力追赶。他们一直说要像初创公司一样发展，但风险承受能力却和 IBM 一样。</p>
@@ -531,13 +531,13 @@
 <p>真正重要的部分始终是：理解人们。打造他们想要的东西。把这些东西送到他们面前。其他一切都只是实施细节。</p>
 ]]></content:encoded></item><item><title>AI项目为何失败？数据决策者避坑指南</title><link>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-09-AI%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</link><pubDate>Tue, 09 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-09-AI%E9%A1%B9%E7%9B%AE%E5%A4%B1%E8%B4%A5%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</guid><description>&lt;h2 id="ai项目为何失败数据决策者避坑指南"&gt;AI项目为何失败？数据决策者避坑指南&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;AI策略副总裁&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="AI项目为何失败？数据决策者避坑指南" loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/Why-AI-Projects-Fail-and-How-to-Prevent-It-A-Strategic-Guide-for-Data-Driven-Decision-Makers.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://achievion.com/wp-content/uploads/2024/04/Why-AI-Projects-Fail-and-How-to-Prevent-It-A-Strategic-Guide-for-Data-Driven-Decision-Makers.png" alt="AI项目为何失败？数据决策者避坑指南" loading="lazy" decoding="async" /&gt;&lt;/p&gt;
 &lt;p&gt;2025年1月5日&lt;/p&gt;
 &lt;p&gt;阅读时间 15 分钟&lt;/p&gt;
 &lt;p&gt;分享：&lt;/p&gt;
 &lt;p&gt;人工智能（AI）已然颠覆全局，为各行各业许下效率、产能与创新的飞跃。然而，潜力虽好，许多公司在落地AI项目时却困难重重，结果往往未及预期。&lt;/p&gt;</description><content:encoded><![CDATA[<h2 id="ai项目为何失败数据决策者避坑指南">AI项目为何失败？数据决策者避坑指南</h2>
 <p><strong>AI策略副总裁</strong></p>
-<p><img alt="AI项目为何失败？数据决策者避坑指南" loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/Why-AI-Projects-Fail-and-How-to-Prevent-It-A-Strategic-Guide-for-Data-Driven-Decision-Makers.png"></p>
+<p><img src="https://achievion.com/wp-content/uploads/2024/04/Why-AI-Projects-Fail-and-How-to-Prevent-It-A-Strategic-Guide-for-Data-Driven-Decision-Makers.png" alt="AI项目为何失败？数据决策者避坑指南" loading="lazy" decoding="async" /></p>
 <p>2025年1月5日</p>
 <p>阅读时间 15 分钟</p>
 <p>分享：</p>
@@ -547,7 +547,7 @@
 <h2 id="ai项目为何折戟">AI项目为何折戟</h2>
 <p>AI项目之路，关卡重重，常常阻碍其进展与实效。其结果是，多数项目最终半途而废。那么，失败率究竟有多高？</p>
 <p>据《华尔街日报》近期一篇文章指出，AI项目的失败率高达50%。</p>
-<p><img loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/The-failure-rate-of-AI-projects-is-50-percent-1024x573.png"></p>
+<p><img src="https://achievion.com/wp-content/uploads/2024/04/The-failure-rate-of-AI-projects-is-50-percent-1024x573.png" alt="" loading="lazy" decoding="async" /></p>
 <p>此外，IBM在其《2023年全球AI采用指数》报告中提到，导致AI项目失败的首要原因包括：AI专业知识有限（33%）、数据复杂性（25%）和伦理问题（23%）。</p>
 <p>让我们来看几个AI失败的实例，探究其为何没能达成积极的成果。</p>
 <h2 id="ai失败实例">AI失败实例</h2>
@@ -573,7 +573,7 @@
 <p>随着企业越来越多地投资于AI驱动的解决方案以获取竞争优势，理解机器学习项目错综复杂的环境在当今技术生态中至关重要。</p>
 <p>尽管机器学习前景广阔，但现实是，大多数AI项目都会遇到意想不到的障碍，无法交付预期成果。</p>
 <p>在本节中，我们将深入探讨机器学习项目失败的多方面原因，揭示导致其衰落的技术、组织和战略因素之间复杂的相互作用。</p>
-<p><img loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/What-are-the-reasons-behind-the-failure-of-machine-learning-projects-1024x573.png"></p>
+<p><img src="https://achievion.com/wp-content/uploads/2024/04/What-are-the-reasons-behind-the-failure-of-machine-learning-projects-1024x573.png" alt="" loading="lazy" decoding="async" /></p>
 <h3 id="1-ai项目的风险与复杂性">1. AI项目的风险与复杂性</h3>
 <p>尖端的机器学习模型和算法为工业应用提供了广阔天地。从生成复杂内容的简洁摘要，到精细分类客户反馈，再到通过GPT-4等创新技术组织非结构化数据，机器学习在不同领域的应用潜力前所未有。</p>
 <p>然而，随着机器学习模型训练所用的数据集日益多样——从传统的电子表格到复杂的音视频记录——风险管理成为一项艰巨的挑战。这种复杂性愈发凸显了制定稳健的风险管理策略以有效应对未知挑战的重要性。</p>
@@ -626,7 +626,7 @@
 <p>该小组需要制定明确的道德准则和防止偏见的屏障。团队必须讨论AI的偏见、隐私、安全和法规问题，这些问题常常会导致法律后果和声誉损害。</p>
 <h2 id="achievion如何助力提升ai成功率">Achievion如何助力提升AI成功率</h2>
 <p>Achievion开发了自己名为ACHIEVE的方法论，以确保AI项目的成功交付。让我们分解每一步，探索它如何为项目的整体成功做出贡献：</p>
-<p><img loading="lazy" src="https://achievion.com/wp-content/uploads/2024/04/Achievion-Proposal-Template-1.pptx-1024x576.png"></p>
+<p><img src="https://achievion.com/wp-content/uploads/2024/04/Achievion-Proposal-Template-1.pptx-1024x576.png" alt="" loading="lazy" decoding="async" /></p>
 <h3 id="1-分析业务模型并整合系统需求">1. 分析业务模型并整合系统需求：</h3>
 <p>Achievion认识到透彻理解业务背景并整合详细系统需求的重要性。通过将AI项目与组织目标挂钩，Achievion确保了方向一致，并提高了实现预期投资回报的可能性。</p>
 <h3 id="2-通过未来的交付阶段持续优化产品路线图">2. 通过未来的交付阶段，持续优化产品路线图：</h3>
@@ -855,10 +855,10 @@
 <p>而更令人不安的是，当我们习惯了这面镜子的“完美”，我们可能就再也无法忍受真实世界里的“不完美”了。真实的人际关系，充满了误解、争吵和笨拙的关爱，它永远不会像AI那样顺滑。当我们沉浸在AI营造的舒适区里，我们与真实世界的连接，会不会变得越来越脆弱？</p>
 <p>最让人无力的是，当这面镜子出了错，给出了致命的建议，它会瞬间变回一块冰冷的玻璃，而创造它的企业会说：“我们早就提醒过，这只是一个工具。” 责任，就这样消失在了空气里。最终，承担所有风险的，只有那个付出了最沉重情感的人。</p>
 <p>这故事的结尾，没有答案，只有一声悠长的叹息。它关于我们如何老去，如何相爱，又如何在科技带来的便利与虚空中，寻找自己内心的安放之处。</p>
-]]></content:encoded></item><item><title>麻省理工学院研究发现人工智能会重新编程大脑，导致认知能力下降</title><link>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</link><pubDate>Wed, 03 Sep 2025 10:00:00 +2200</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</guid><description>&lt;p&gt;作者： &lt;strong&gt;&lt;a href="https://x.com/NicHulscher"&gt;Nicolas Hulscher，公共卫生硕士&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+]]></content:encoded></item><item><title>麻省理工学院研究发现人工智能会重新编程大脑，导致认知能力下降</title><link>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</link><pubDate>Wed, 03 Sep 2025 10:00:00 +0800</pubDate><guid>https://luoziyan100.github.io/myweb/posts/2025/9%E6%9C%88%E4%BB%BD/2025-09-03-%E8%BF%87%E5%BA%A6%E4%BD%BF%E7%94%A8gpt%E4%BC%9A%E5%AF%BC%E8%87%B4%E8%AE%A4%E7%9F%A5%E4%B8%8B%E9%99%8D/</guid><description>&lt;p&gt;作者： &lt;strong&gt;&lt;a href="https://x.com/NicHulscher"&gt;Nicolas Hulscher，公共卫生硕士&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;麻省理工学院的一项新研究题为《 &lt;strong&gt;&lt;a href="https://arxiv.org/abs/2506.08872"&gt;ChatGPT 下的大脑：使用人工智能助手进行论文写作时认知债务的积累》&lt;/a&gt; ，&lt;/strong&gt; 发现使用 ChatGPT 辅助写作会导致长期认知损害——可以通过脑电图扫描测量。反复依赖 ChatGPT 的学生表现出 &lt;strong&gt;神经连接减弱、记忆力受损以及&lt;/strong&gt; &lt;strong&gt;对自身写作的&lt;/strong&gt; 自主感减弱。虽然人工智能生成的内容通常得分很高，但其背后的大脑却在关闭。&lt;/p&gt;</description><content:encoded><![CDATA[<p>作者： <strong><a href="https://x.com/NicHulscher">Nicolas Hulscher，公共卫生硕士</a></strong></p>
 <p>麻省理工学院的一项新研究题为《 <strong><a href="https://arxiv.org/abs/2506.08872">ChatGPT 下的大脑：使用人工智能助手进行论文写作时认知债务的积累》</a> ，</strong> 发现使用 ChatGPT 辅助写作会导致长期认知损害——可以通过脑电图扫描测量。反复依赖 ChatGPT 的学生表现出 <strong>神经连接减弱、记忆力受损以及</strong> <strong>对自身写作的</strong> 自主感减弱。虽然人工智能生成的内容通常得分很高，但其背后的大脑却在关闭。</p>
-<p><img loading="lazy" src="https://i0.wp.com/substackcdn.com/image/fetch/%24s_%217_Vh%21%2Cw_2400%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc0192a7-cf35-4b80-9095-8daab6f24ed9_1753x1188.png?w=1200&ssl=1"></p>
+<p><img src="https://i0.wp.com/substackcdn.com/image/fetch/%24s_%217_Vh%21%2Cw_2400%2Cc_limit%2Cf_auto%2Cq_auto%3Agood%2Cfl_progressive%3Asteep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbc0192a7-cf35-4b80-9095-8daab6f24ed9_1753x1188.png?w=1200&amp;ssl=1" alt="" loading="lazy" decoding="async" /></p>
 <p>研究结果清晰可见：像 ChatGPT 和 Grok 这样的大型语言模型 (LLM) 不仅能帮助学生写作，还能训练大脑放松。以下是研究人员的发现：</p>
 <hr>
 <h4 id="人工智能的使用导致大脑连通性下降">人工智能的使用导致大脑连通性下降</h4>
@@ -951,7 +951,7 @@
 <p>不妨把现在的法学硕士（LLM）想象成一群聪明却固执的团队成员。他们擅长处理任何信息，但却总是用自己固有的世界观来解读数据。随着这些模型变得越来越庞大复杂，他们的方法也变得越来越“僵化”，使得开发人员很难影响他们的内部决策过程。</p>
 <h1 id="从工程到建模范式转变">从工程到建模：范式转变</h1>
 <p>传统的情境工程方法侧重于创建更复杂的规则和算法来管理情境检索。然而，这错失了一个关键的机会。我们不应该仅仅设计更好的规则，而应该转向情境建模——一个能够根据当前情况生成特定情境的动态自适应系统。上下文建模引入了一个与主语言模型 (LLM) 协同工作的个性化模型，充当智能中介，既能理解用户的需求，又能以最佳方式向大型语言模型呈现信息。这种方法认识到，高效的人工智能系统不仅需要强大的模型，还需要智能的上下文管理。</p>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvLioVaMAAWVC3?format=jpg&name=medium"></p>
+<p><img src="https://pbs.twimg.com/media/GzvLioVaMAAWVC3?format=jpg&amp;name=medium" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="从推荐系统中学习">从推荐系统中学习</h1>
 <p>上下文建模的架构灵感源自成熟的两阶段推荐系统，该系统为当今许多最成功的平台提供支持。这些系统包括：</p>
 <ul>
@@ -969,7 +969,7 @@
 <li>效率：通过使用更小、更专业的模型来生成上下文，系统在提供更智能的上下文管理的同时，还能保持效率。</li>
 <li>开发人员控制：上下文建模为代理开发人员提供了可影响和改进的可训练组件，从而创造了持续学习和优化的机会。</li>
 </ul>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvMr-3bEAAyBT5?format=jpg&name=900x900"></p>
+<p><img src="https://pbs.twimg.com/media/GzvMr-3bEAAyBT5?format=jpg&amp;name=900x900" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="理想的架构速度与专业化">理想的架构：速度与专业化</h1>
 <p>为了使上下文建模切实可行，它必须满足一个关键要求：速度。核心 LLM 的延迟已经成为用户体验的一个重大瓶颈。</p>
 <p>目前，主要的解决方法是流式传输响应。然而，流式传输无法缓解第一个令牌的延迟。检索模型的端到端延迟会导致第一个令牌的延迟。任何上下文建模系统都必须非常快，才能避免加剧这种延迟。</p>
@@ -980,7 +980,7 @@
 <li>强大的核心模型：接收这种精心策划的上下文并专注于推理、综合和最终响应生成的复杂任务的大型语言模型。</li>
 </ul>
 <p>这种双模型方法允许实现专业化，其中每个组件都可以针对其特定任务进行优化，从而毫不妥协地提供速度和智能。</p>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvNXh2a4AA1rTG?format=jpg&name=medium"></p>
+<p><img src="https://pbs.twimg.com/media/GzvNXh2a4AA1rTG?format=jpg&amp;name=medium" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="基础设施机遇">基础设施机遇</h1>
 <p>上下文建模代表了整个 AI 行业普遍的基础设施需求。随着越来越多的组织部署 RAG 系统和 AI 代理，对复杂上下文管理的需求将持续增长。这为构建能够支持各种应用和用例的基础设施提供了机遇。</p>
 <p>上下文建模系统的开发需要机器学习和系统设计方面的专业知识，将推荐系统的经验教训与自然语言处理和生成的独特挑战相结合。</p>
@@ -1017,7 +1017,7 @@
 <li>启动子代理来处理这些部分</li>
 <li>最后将这些结果整合</li>
 </ol>
-<p><img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/CEcZIf8cajVcUhbLtodO.png"></p>
+<p><img src="https://image.woshipm.com/wp-files/2025/08/CEcZIf8cajVcUhbLtodO.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>这是一种诱人的架构，尤其是当你在一个包含多个并行组件的任务领域中工作时。然而，它非常脆弱。关键的失败点在于：</p>
 <blockquote>
 <p>假设你的任务是“制作一个《飞扬的小鸟》克隆版”。这会被分解为子任务1“制作一个带有绿色管道和碰撞箱的移动游戏背景”和子任务2“制作一只可以上下移动的小鸟”。
@@ -1028,7 +1028,7 @@
 共享上下文，并共享完整的代理跟踪信息，而不仅仅是单个消息​
 ​</p></blockquote>
 <p>让我们再对我们的代理进行一次修订，这次要确保每个代理都有前一个代理的上下文。​</p>
-<p>​<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/zmo96YCn0wshv6CETYZ9.png"></p>
+<p>​<img src="https://image.woshipm.com/wp-files/2025/08/zmo96YCn0wshv6CETYZ9.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>不幸的是，我们还没有完全脱离困境。当你给你的智能体布置同样的《飞翔的小鸟》克隆任务时，这一次，你最终得到的小鸟和背景可能会有完全不同的视觉风格。子智能体1和子智能体2无法看到对方在做什么，因此它们的工作最终会彼此不一致。​
 ​
 子智能体1采取的行动和子智能体2采取的行动是基于事先未明确规定的相互冲突的假设。​
@@ -1042,11 +1042,11 @@
 ​
 遵循这些原则的最简单方法是仅使用单线程线性代理：​
 ​
-​<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/huO9ZvrNnncuSzKdq5pC.png"></p>
+​<img src="https://image.woshipm.com/wp-files/2025/08/huO9ZvrNnncuSzKdq5pC.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>​在这里，上下文是连续的。然而，对于非常大的任务，由于有太多子部分，上下文窗口可能会开始溢出，从而遇到问题。</p>
-<p><img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/ekHXfvxH39U8k56ACx0o.png"></p>
+<p><img src="https://image.woshipm.com/wp-files/2025/08/ekHXfvxH39U8k56ACx0o.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>老实说，简单的架构能让你走得很远，但对于那些真正有长期任务且愿意付出努力的人来说，你可以做得更好。有几种方法可以解决这个问题，但今天我只介绍一种：
-<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/72c3H23EMkWaiCrTKw5h.png"></p>
+<img src="https://image.woshipm.com/wp-files/2025/08/72c3H23EMkWaiCrTKw5h.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>在这个领域，我们推出了一个新的大语言模型（LLM），其主要目的是将一系列行动和对话的历史压缩成<strong>关键细节、事件和决策</strong>。这是一项难以做好的工作。这需要投入精力来确定哪些最终会成为关键信息，并创建一个擅长此任务的系统。根据不同的领域，你甚至可以考虑微调一个较小的模型（事实上，我们在认知公司已经这样做了）。​
 ​
 你得到的好处是一个在处理较长上下文时更有效的代理。不过，最终还是会遇到限制。对于求知欲强的读者，我鼓励你们思考更好的方法来处理任意长的上下文。这最终会是一个相当深奥的问题！​
@@ -1248,19 +1248,19 @@
 <p>&ldquo;天气&rdquo;: [0.4, 0.5, 0.6] + [0.8, 0.6, 0.0] = [1.2, 1.1, 0.6]</p>
 <p>&ldquo;怎么样&rdquo;: [0.7, 0.8, 0.9] + [0.9, -0.4, 0.0] = [1.6, 0.4, 0.9]</p>
 <p><strong>5.权重矩阵 (假设)</strong>：</p>
-<p><img loading="lazy" src="/images/image.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>6.计算Q,K,V</strong></p>
 <p>将每个 token 的输入表示与 WQ, WK, WV 相乘，得到 Q, K, V 向量：</p>
 <p>将嵌入向量和位置向量相加得到的向量按行组成3x3的矩阵X</p>
-<p><img loading="lazy" src="/images/image-1.png"></p>
-<p><img loading="lazy" src="/images/image-2.png"></p>
-<p><img loading="lazy" src="/images/image-3.png"></p>
-<p><img loading="lazy" src="/images/image-4.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-1.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-2.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-3.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-4.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>7.计算注意力权重</strong></p>
-<p><img loading="lazy" src="/images/image-5.png"></p>
-<p><img loading="lazy" src="/images/image-6.png"></p>
-<p><img loading="lazy" src="/images/image-7.png"></p>
-<p><img loading="lazy" src="/images/%E6%8E%A2%E7%A7%98AI%E5%A4%A7%E8%84%91%EF%BC%9A%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%9A%84_21.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-5.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-6.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-7.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/%E6%8E%A2%E7%A7%98AI%E5%A4%A7%E8%84%91%EF%BC%9A%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%9A%84_21.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>9.Z矩阵蕴含的信息</strong></p>
 <p>Z 矩阵中每一行的含义 Z 矩阵的每一行对应输入序列中的一个 token。这一行向量不再仅仅代表这个 token 本身的语义，而是同时包含了：</p>
 <p> •  该 token 自身的语义信息： 这是由最初的词嵌入提供的。</p>

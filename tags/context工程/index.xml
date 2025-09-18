@@ -9,7 +9,7 @@
 <p>不妨把现在的法学硕士（LLM）想象成一群聪明却固执的团队成员。他们擅长处理任何信息，但却总是用自己固有的世界观来解读数据。随着这些模型变得越来越庞大复杂，他们的方法也变得越来越“僵化”，使得开发人员很难影响他们的内部决策过程。</p>
 <h1 id="从工程到建模范式转变">从工程到建模：范式转变</h1>
 <p>传统的情境工程方法侧重于创建更复杂的规则和算法来管理情境检索。然而，这错失了一个关键的机会。我们不应该仅仅设计更好的规则，而应该转向情境建模——一个能够根据当前情况生成特定情境的动态自适应系统。上下文建模引入了一个与主语言模型 (LLM) 协同工作的个性化模型，充当智能中介，既能理解用户的需求，又能以最佳方式向大型语言模型呈现信息。这种方法认识到，高效的人工智能系统不仅需要强大的模型，还需要智能的上下文管理。</p>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvLioVaMAAWVC3?format=jpg&name=medium"></p>
+<p><img src="https://pbs.twimg.com/media/GzvLioVaMAAWVC3?format=jpg&amp;name=medium" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="从推荐系统中学习">从推荐系统中学习</h1>
 <p>上下文建模的架构灵感源自成熟的两阶段推荐系统，该系统为当今许多最成功的平台提供支持。这些系统包括：</p>
 <ul>
@@ -27,7 +27,7 @@
 <li>效率：通过使用更小、更专业的模型来生成上下文，系统在提供更智能的上下文管理的同时，还能保持效率。</li>
 <li>开发人员控制：上下文建模为代理开发人员提供了可影响和改进的可训练组件，从而创造了持续学习和优化的机会。</li>
 </ul>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvMr-3bEAAyBT5?format=jpg&name=900x900"></p>
+<p><img src="https://pbs.twimg.com/media/GzvMr-3bEAAyBT5?format=jpg&amp;name=900x900" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="理想的架构速度与专业化">理想的架构：速度与专业化</h1>
 <p>为了使上下文建模切实可行，它必须满足一个关键要求：速度。核心 LLM 的延迟已经成为用户体验的一个重大瓶颈。</p>
 <p>目前，主要的解决方法是流式传输响应。然而，流式传输无法缓解第一个令牌的延迟。检索模型的端到端延迟会导致第一个令牌的延迟。任何上下文建模系统都必须非常快，才能避免加剧这种延迟。</p>
@@ -38,7 +38,7 @@
 <li>强大的核心模型：接收这种精心策划的上下文并专注于推理、综合和最终响应生成的复杂任务的大型语言模型。</li>
 </ul>
 <p>这种双模型方法允许实现专业化，其中每个组件都可以针对其特定任务进行优化，从而毫不妥协地提供速度和智能。</p>
-<p><img alt="alt" loading="lazy" src="https://pbs.twimg.com/media/GzvNXh2a4AA1rTG?format=jpg&name=medium"></p>
+<p><img src="https://pbs.twimg.com/media/GzvNXh2a4AA1rTG?format=jpg&amp;name=medium" alt="alt" loading="lazy" decoding="async" /></p>
 <h1 id="基础设施机遇">基础设施机遇</h1>
 <p>上下文建模代表了整个 AI 行业普遍的基础设施需求。随着越来越多的组织部署 RAG 系统和 AI 代理，对复杂上下文管理的需求将持续增长。这为构建能够支持各种应用和用例的基础设施提供了机遇。</p>
 <p>上下文建模系统的开发需要机器学习和系统设计方面的专业知识，将推荐系统的经验教训与自然语言处理和生成的独特挑战相结合。</p>

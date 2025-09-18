@@ -145,7 +145,7 @@
 <p>让我们来详细探讨每种模式。</p>
 <h3 id="单-agent-系统">单 agent 系统</h3>
 <p>单个 agent 可以通过逐步添加工具来处理许多任务，从而保持复杂性可控，并简化评估和维护。每个新工具都能扩展其能力，而不会过早地迫使您去编排多个 agent。</p>
-<p><img alt="单agent系统" loading="lazy" src="/img/blog-images/image_single_agent.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_single_agent.png" alt="单agent系统" loading="lazy" decoding="async" /></p>
 <p>每种编排方法都需要一个&quot;运行&quot; (run) 的概念，通常实现为一个循环，让 agent 持续运行直到满足退出条件。 常见的退出条件包括工具调用、产生某种结构化输出、发生错误或达到最大轮次限制。</p>
 <p>例如，在 Agents SDK 中，agent 是使用 <code>Runner.run()</code> 方法启动的，该方法会在 LLM 上循环，直到：</p>
 <ol>
@@ -183,7 +183,7 @@
 <h3 id="管理者模式-manager-pattern">管理者模式 (Manager pattern)</h3>
 <p>管理者模式让一个中心的 LLM——“管理者”——通过工具调用无缝地编排一个由专门 agent 组成的网络。管理者不会丢失上下文或控制权，而是智能地在适当的时间将任务委派给正确的 agent，并毫不费力地将结果合成为一个连贯的交互。这确保了流畅、统一的用户体验，专门的能力随时待命。</p>
 <p>这种模式非常适合于您只想让一个 agent 控制工作流执行并与用户交互的工作流。</p>
-<p><img alt="管理范式" loading="lazy" src="/img/image.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_manage_agent.png" alt="管理范式" loading="lazy" decoding="async" /></p>
 <p>例如，以下是如何在 Agents SDK 中实现这种模式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> agents <span style="color:#f92672">import</span> Agent, Runner
 </span></span><span style="display:flex;"><span>
@@ -222,7 +222,7 @@
 <h3 id="去中心化模式-decentralized-pattern">去中心化模式 (Decentralized pattern)</h3>
 <p>在去中心化模式中，agent 可以将工作流执行“交接”给另一个 agent。交接是一种单向转移，允许一个 agent 将任务委派给另一个 agent。在 Agents SDK 中，交接是一种工具或函数。如果一个 agent 调用了一个交接函数，我们会立即在被交接的新 agent 上开始执行，同时转移最新的对话状态。</p>
 <p>这种模式涉及使用多个地位平等的 agent，其中一个 agent 可以直接将工作流的控制权交给另一个 agent。当您不需要单个 agent 保持中心控制或进行综合处理时，这是最佳选择——而是允许每个 agent 根据需要接管执行并与用户交互。</p>
-<p><img alt="alt" loading="lazy" src="/img/blog-images/image_agent.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_agent.png" alt="alt" loading="lazy" decoding="async" /></p>
 <p>例如，以下是如何使用 Agents SDK 为处理销售和支持的客户服务工作流实现去中心化模式：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> agents <span style="color:#f92672">import</span> Agent, Runner
 </span></span><span style="display:flex;"><span>
@@ -268,7 +268,7 @@
 <h2 id="guardrails-护栏">Guardrails (护栏)</h2>
 <p>设计良好的护栏 (guardrails) 可帮助您管理数据隐私风险（例如，防止系统提示泄露）或声誉风险（例如，强制执行符合品牌形象的模型行为）。您可以设置护栏来解决您已为用例识别的风险，并在发现新的漏洞时分层添加额外的护栏。护栏是任何基于 LLM 的部署的关键组成部分，但应与强大的身份验证和授权协议、严格的访问控制以及标准的软件安全措施相结合。</p>
 <p>把护栏想象成一个分层防御机制。虽然单个护栏不太可能提供足够的保护，但将多个专门的护栏结合使用可以创建更具弹性的 agent。</p>
-<p><img alt="护栏分层防御机制" loading="lazy" src="/img/blog-images/image_copy.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image_copy.png" alt="护栏分层防御机制" loading="lazy" decoding="async" /></p>
 <h3 id="护栏的类型">护栏的类型</h3>
 <ul>
 <li>

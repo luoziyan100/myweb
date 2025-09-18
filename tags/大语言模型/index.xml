@@ -169,19 +169,19 @@
 <p>&ldquo;天气&rdquo;: [0.4, 0.5, 0.6] + [0.8, 0.6, 0.0] = [1.2, 1.1, 0.6]</p>
 <p>&ldquo;怎么样&rdquo;: [0.7, 0.8, 0.9] + [0.9, -0.4, 0.0] = [1.6, 0.4, 0.9]</p>
 <p><strong>5.权重矩阵 (假设)</strong>：</p>
-<p><img loading="lazy" src="/images/image.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>6.计算Q,K,V</strong></p>
 <p>将每个 token 的输入表示与 WQ, WK, WV 相乘，得到 Q, K, V 向量：</p>
 <p>将嵌入向量和位置向量相加得到的向量按行组成3x3的矩阵X</p>
-<p><img loading="lazy" src="/images/image-1.png"></p>
-<p><img loading="lazy" src="/images/image-2.png"></p>
-<p><img loading="lazy" src="/images/image-3.png"></p>
-<p><img loading="lazy" src="/images/image-4.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-1.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-2.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-3.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-4.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>7.计算注意力权重</strong></p>
-<p><img loading="lazy" src="/images/image-5.png"></p>
-<p><img loading="lazy" src="/images/image-6.png"></p>
-<p><img loading="lazy" src="/images/image-7.png"></p>
-<p><img loading="lazy" src="/images/%E6%8E%A2%E7%A7%98AI%E5%A4%A7%E8%84%91%EF%BC%9A%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%9A%84_21.png"></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-5.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-6.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/image-7.png" alt="" loading="lazy" decoding="async" /></p>
+<p><img src="https://luoziyan100.github.io/myweb/images/%E6%8E%A2%E7%A7%98AI%E5%A4%A7%E8%84%91%EF%BC%9A%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E4%B8%80%E5%8F%A5%E8%AF%9D%E7%9A%84_21.png" alt="" loading="lazy" decoding="async" /></p>
 <p><strong>9.Z矩阵蕴含的信息</strong></p>
 <p>Z 矩阵中每一行的含义 Z 矩阵的每一行对应输入序列中的一个 token。这一行向量不再仅仅代表这个 token 本身的语义，而是同时包含了：</p>
 <p> •  该 token 自身的语义信息： 这是由最初的词嵌入提供的。</p>

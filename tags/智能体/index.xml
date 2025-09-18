@@ -21,7 +21,7 @@
 <li>启动子代理来处理这些部分</li>
 <li>最后将这些结果整合</li>
 </ol>
-<p><img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/CEcZIf8cajVcUhbLtodO.png"></p>
+<p><img src="https://image.woshipm.com/wp-files/2025/08/CEcZIf8cajVcUhbLtodO.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>这是一种诱人的架构，尤其是当你在一个包含多个并行组件的任务领域中工作时。然而，它非常脆弱。关键的失败点在于：</p>
 <blockquote>
 <p>假设你的任务是“制作一个《飞扬的小鸟》克隆版”。这会被分解为子任务1“制作一个带有绿色管道和碰撞箱的移动游戏背景”和子任务2“制作一只可以上下移动的小鸟”。
@@ -32,7 +32,7 @@
 共享上下文，并共享完整的代理跟踪信息，而不仅仅是单个消息​
 ​</p></blockquote>
 <p>让我们再对我们的代理进行一次修订，这次要确保每个代理都有前一个代理的上下文。​</p>
-<p>​<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/zmo96YCn0wshv6CETYZ9.png"></p>
+<p>​<img src="https://image.woshipm.com/wp-files/2025/08/zmo96YCn0wshv6CETYZ9.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>不幸的是，我们还没有完全脱离困境。当你给你的智能体布置同样的《飞翔的小鸟》克隆任务时，这一次，你最终得到的小鸟和背景可能会有完全不同的视觉风格。子智能体1和子智能体2无法看到对方在做什么，因此它们的工作最终会彼此不一致。​
 ​
 子智能体1采取的行动和子智能体2采取的行动是基于事先未明确规定的相互冲突的假设。​
@@ -46,11 +46,11 @@
 ​
 遵循这些原则的最简单方法是仅使用单线程线性代理：​
 ​
-​<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/huO9ZvrNnncuSzKdq5pC.png"></p>
+​<img src="https://image.woshipm.com/wp-files/2025/08/huO9ZvrNnncuSzKdq5pC.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>​在这里，上下文是连续的。然而，对于非常大的任务，由于有太多子部分，上下文窗口可能会开始溢出，从而遇到问题。</p>
-<p><img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/ekHXfvxH39U8k56ACx0o.png"></p>
+<p><img src="https://image.woshipm.com/wp-files/2025/08/ekHXfvxH39U8k56ACx0o.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>老实说，简单的架构能让你走得很远，但对于那些真正有长期任务且愿意付出努力的人来说，你可以做得更好。有几种方法可以解决这个问题，但今天我只介绍一种：
-<img alt="alt text" loading="lazy" src="https://image.woshipm.com/wp-files/2025/08/72c3H23EMkWaiCrTKw5h.png"></p>
+<img src="https://image.woshipm.com/wp-files/2025/08/72c3H23EMkWaiCrTKw5h.png" alt="alt text" loading="lazy" decoding="async" /></p>
 <p>在这个领域，我们推出了一个新的大语言模型（LLM），其主要目的是将一系列行动和对话的历史压缩成<strong>关键细节、事件和决策</strong>。这是一项难以做好的工作。这需要投入精力来确定哪些最终会成为关键信息，并创建一个擅长此任务的系统。根据不同的领域，你甚至可以考虑微调一个较小的模型（事实上，我们在认知公司已经这样做了）。​
 ​
 你得到的好处是一个在处理较长上下文时更有效的代理。不过，最终还是会遇到限制。对于求知欲强的读者，我鼓励你们思考更好的方法来处理任意长的上下文。这最终会是一个相当深奥的问题！​

@@ -1,0 +1,11 @@
+{{/* Render hook for Markdown images
+     - Normalizes local paths to respect baseURL with subdir (e.g., /myweb)
+     - Leaves fully qualified http(s) URLs untouched
+*/}}
+{{- $src := .Destination | safeURL -}}
+{{- if or (strings.HasPrefix $src "http://") (strings.HasPrefix $src "https://") -}}
+  <img src="{{ $src }}" alt="{{ .Text }}" loading="lazy" decoding="async" />
+{{- else -}}
+  {{- $norm := strings.TrimPrefix "/" $src -}}
+  <img src="{{ $norm | absURL }}" alt="{{ .Text }}" loading="lazy" decoding="async" />
+{{- end -}}

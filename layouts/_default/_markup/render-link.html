@@ -1,0 +1,6 @@
+{{- $href := .Destination | safeURL -}}
+{{- if strings.HasPrefix $href "http" -}}
+  <a href="{{ $href }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- else -}}
+  <a href="{{ $href | relURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

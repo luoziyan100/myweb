@@ -3,7 +3,7 @@ title: "解构Transformer：注意力机制的深度解析"
 date: 2025-03-08T00:00:00+08:00
 author: "yan"
 tags: ["Transformer", "注意力机制", "NLP", "深度学习"]
-image: "/images/transformer-header.jpg"
+image: "/images/image-1.png"
 excerpt: "Transformer架构自2017年问世以来彻底改变了自然语言处理领域。本文深入探讨注意力机制的数学原理、计算过程和最新优化方法，帮助你理解这一强大架构的核心组件。"
 ---
 

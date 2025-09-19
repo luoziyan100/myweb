@@ -3,7 +3,7 @@ title: "探秘AI：AI是如何理解一句话的"
 date: 2025-03-08T00:00:00+08:00
 author: "yan"
 tags: ["人工智能", "自然语言处理", "深度学习", "语言理解"]
-image: "/images/ai-language-understanding.jpg"
+image: "/images/image-1.png"
 excerpt: "本文深入探讨了现代AI系统如何理解和处理人类语言，从词嵌入到预训练语言模型，揭示了人工智能是如何逐步解析一句人类语言的全过程。"
 ---
 

@@ -5,8 +5,16 @@ theme = 'PaperMod'
 
 enableRobotsTXT = true
 buildDrafts = false
-buildFuture = false
+buildFuture = true
 buildExpired = false
+disablePathToLower = true
+
+# 中文字数统计支持
+hasCJKLanguage = true
+
+# 输出格式配置，用于搜索功能
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 # 分页设置
 [pagination]
@@ -44,7 +52,7 @@ disableScrollToTop = false
 comments = false
 hidemeta = false
 hideSummary = false
-showtoc = true
+showtoc = false
 tocopen = false
 
 # 主题外观定制

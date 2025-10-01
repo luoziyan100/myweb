@@ -2,6 +2,8 @@
 
 这是 yan 的个人博客站点，使用 Hugo 静态站点生成器与 PaperMod 主题。
 
+🌐 **网站地址**：https://luoziyan100.github.io/myweb/
+
 ## 快速开始
 
 - 主题子模块（首次克隆后）：
@@ -32,14 +34,14 @@
 
 ## 部署
 
-默认通过 GitHub Actions 自动部署到 GitHub Pages。
-- 将内容提交到 `master`：
+通过 GitHub Actions 自动部署到 GitHub Pages。
+- 将内容提交到 `main` 分支：
   ```bash
-  git add -A && git commit -m "post: 新文章" && git push
+  git add . && git commit -m "post: 新文章" && git push
   ```
-- CI 使用指定版本 Hugo 构建并发布，无需本地 `public/` 推送。
+- GitHub Actions 会自动构建并发布，无需手动操作。
 
-如需手动部署（不推荐），可以参考 `update_blog.sh`，但建议以 CI 为主，保持流程简单稳定。
+> 💡 **自动化流程**：推送到 `main` 分支后，CI 会使用 Hugo 0.149.0 构建静态文件并部署到 GitHub Pages。
 
 ## 目录说明
 - `content/`：文章与页面

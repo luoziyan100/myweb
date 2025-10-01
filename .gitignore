@@ -2,8 +2,8 @@
 public/
 .hugo_build.lock
 
-# Virtual environment
-venv/
+# Virtual environment (legacy)
+# venv/
 
 # Python
 __pycache__/
@@ -22,3 +22,7 @@ blog-content/
 
 # Local development
 *.log
+
+# Temporary files
+.gemini-clipboard/
+*.tmp
